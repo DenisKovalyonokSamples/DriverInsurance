@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/background_dark_blue">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="20dp">
+        <TextView
+            android:id="@+id/gridItemNumberTitle"
+            android:text="Номер страхового дела"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/description_message_color"
+            android:typeface="sans"
+            android:layout_gravity="left"
+            android:textSize="@dimen/h3_text_size"
+            android:singleLine="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="7dp" />
+        <TextView
+            android:id="@+id/gridItemNumber"
+            android:text="17-01-00001"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/bgr_white"
+            android:typeface="sans"
+            android:layout_gravity="left"
+            android:textSize="@dimen/h2_text_size"
+            android:paddingTop="@dimen/list_item_main_section_text_padding_top"
+            android:singleLine="true"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="20dp">
+        <TextView
+            android:id="@+id/gridItemDateTitle"
+            android:text="Дата события"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/description_message_color"
+            android:typeface="sans"
+            android:layout_gravity="left"
+            android:textSize="@dimen/h3_text_size"
+            android:singleLine="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="7dp" />
+        <TextView
+            android:id="@+id/gridItemDate"
+            android:text="01.06.2017"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/bgr_white"
+            android:typeface="sans"
+            android:layout_gravity="left"
+            android:textSize="@dimen/h2_text_size"
+            android:paddingTop="@dimen/list_item_main_section_text_padding_top"
+            android:singleLine="true"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="23dp"
+        android:paddingBottom="20dp">
+        <TextView
+            android:id="@+id/gridItemStatusTitle"
+            android:text="Статус"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/description_message_color"
+            android:typeface="sans"
+            android:layout_gravity="left"
+            android:textSize="@dimen/h3_text_size"
+            android:singleLine="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp" />
+        <TextView
+            android:id="@+id/gridItemStatus"
+            android:text="На рассмотрении"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_orange"
+            android:typeface="sans"
+            android:layout_gravity="left"
+            android:textSize="17sp"
+            android:paddingTop="@dimen/list_item_main_section_text_padding_top"
+            android:singleLine="true"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/gridItemSeparator"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/grid_separator_color" />
+</LinearLayout>

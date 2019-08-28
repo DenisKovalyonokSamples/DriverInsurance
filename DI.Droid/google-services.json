@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "199251878122",
+    "firebase_url": "https://driver-insurance.firebaseio.com",
+    "project_id": "driver-insurance",
+    "storage_bucket": "driver-insurance.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:199251875122:android:f68a9703certdfd1a9",
+        "android_client_info": {
+          "package_name": "DI.Droid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "195645871122-gaaa6vsdfsfaibd1p8pqi9i11qogrj2a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "YOUR API KEY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:199251871122:android:f99esdfgh21bec1",
+        "android_client_info": {
+          "package_name": "com.driverinsurance.ryxol"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "199251871122-gaaa6vof31ghtght1p8pqi9i11qogrj2a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "YOUR API KEY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:background="@color/background_dark_blue"
+    android:layout_marginBottom="4dp">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:paddingBottom="10dp">
+        <TextView
+            android:id="@+id/gridItemDescription"
+            android:text="За стиль вождения"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/bgr_white"
+            android:typeface="sans"
+            android:layout_gravity="left"
+            android:textSize="@dimen/h3_text_size"
+            android:paddingTop="@dimen/list_item_main_section_text_padding_top"
+            android:singleLine="true"
+            android:layout_alignParentRight="true" />
+        <TextView
+            android:id="@+id/gridItemDate"
+            android:text="01.03.2017"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/description_message_color"
+            android:typeface="sans"
+            android:layout_gravity="left"
+            android:textSize="@dimen/h3_text_size"
+            android:singleLine="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true">
+        <TextView
+            android:id="@+id/gridItemNumber"
+            android:text="+300"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/submit_button_color"
+            android:typeface="sans"
+            android:layout_gravity="right"
+            android:textSize="@dimen/h2_text_size"
+            android:singleLine="true"
+            android:layout_alignParentRight="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/gridItemSeparator"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/grid_separator_color"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

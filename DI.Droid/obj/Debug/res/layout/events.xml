@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark_blue"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:paddingRight="0dp"
+    android:paddingLeft="0dp">
+    <android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:paddingRight="@dimen/padding_right"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:id="@+id/toolbar" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/layoutTableContainer"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_marginBottom="110dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="@color/background_light_blue"
+            android:visibility="gone">
+            <TextView
+                android:text="СТРАХОВЫЕ ДЕЛА"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textInsuranceBusinessesTitle"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/h2_text_size"
+                android:textColor="@color/text_light_blue" />
+        </RelativeLayout>
+        <ProgressBar
+            android:id="@+id/progressBarLoading"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="24dip"
+            android:maxHeight="24dip"
+            android:visibility="gone"
+            android:indeterminateOnly="true"
+            style="?android:attr/progressBarStyleHorizontal" />
+        <TextView
+            android:id="@+id/emptyListText"
+            android:typeface="sans"
+            android:gravity="center"
+            android:textColor="@color/description_message_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/h3_text_size"
+            android:layout_below="@id/progressBarLoading"
+            android:paddingTop="10dp"
+            android:text="No Items"
+            android:layout_gravity="center_horizontal" />
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:background="@color/background_dark_blue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </android.support.design.widget.CoordinatorLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/layoutDescriptionContainer"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="64dp">
+      <RelativeLayout
+                   android:id="@+id/layoutLocalCall"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:minWidth="25px"
+                   android:minHeight="25px"
+                   android:layout_marginTop="12dp"
+                   android:layout_marginBottom="12dp"
+                   android:layout_marginLeft="4dp"
+                   android:layout_marginRight="4dp">
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/info_message_background"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+          <RelativeLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:paddingTop="8dp"
+              android:paddingBottom="8dp"
+              android:paddingLeft="12dp"
+              android:paddingRight="12dp"
+              android:layout_marginTop="2dp"
+              android:layout_alignParentRight="true"
+              android:layout_centerVertical="true">
+            <ImageView
+                android:layout_height="18dp"
+                android:layout_width="18dp"
+                android:layout_marginRight="@dimen/list_item_icon_padding_right"
+                android:src="@mipmap/call_green"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center" />
+          </RelativeLayout>
+          <LinearLayout
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:paddingBottom="4dp"
+              android:paddingLeft="12dp"
+              android:paddingRight="12dp"
+              android:paddingTop="4dp"
+              android:layout_centerVertical="true">
+            <TextView
+                android:id="@+id/localCallDescription"
+                android:text="Контакт-центр партнера ООО РСО «ЕВРОИНС»"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/content_gray"
+                android:typeface="sans"
+                android:layout_gravity="left"
+                android:textSize="@dimen/h4_text_size"
+                android:paddingTop="@dimen/list_item_main_section_text_padding_top"
+                android:singleLine="true" />
+            <TextView
+                android:id="@+id/localCallNumber"
+                android:text="8 (800) 775-10-53"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/bgr_white"
+                android:typeface="sans"
+                android:layout_gravity="left"
+                android:textSize="@dimen/h3_text_size"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:layout_marginTop="4dp" />
+          </LinearLayout>
+        </RelativeLayout>
+      </RelativeLayout>
+      <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:paddingBottom="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:text="Что делать при ДТП"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textTitleOne"
+                        android:textSize="@dimen/h3_text_size"
+                        android:textColor="@color/text_orange" />
+                </RelativeLayout>
+                <TextView
+                    android:text="1. Немедленно остановите транспортное средство (далее - ТС) и включите аварийную световую сигнализацию;"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/textDescriptionOne"
+                    android:textColor="@color/bgr_white"
+                    android:textSize="@dimen/h3_text_size" />
+                <TextView
+                    android:text="2. Выставьте знак аварийной остановки (не менее 15 м от ТС в населенном пункте и не менее 30 м вне населенного пункта);"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/textDescriptionTwo"
+                    android:textColor="@color/bgr_white"
+                    android:textSize="@dimen/h3_text_size" />
+                <TextView
+                    android:text="3. Свяжитесь с экстренной службой: 112 - экстренные службы с мобильного телефона; 020 – для абонентов МТС, МегаФона; 002 - для абонентов БиЛайн и действуйте согласно указаниям сотрудника ГИБДД."
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/textDescriptionThree"
+                    android:textColor="@color/bgr_white"
+                    android:textSize="@dimen/h3_text_size" />
+                <TextView
+                    android:text="4. Зафиксируйте с помощью фото и видео по отношению к друг другу и объектам дорожной инфраструктуры, следы и предметы, относящиеся к происшествию, повреждения ТС, рег. номера и VIN номера ТС;"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/textDescriptionFour"
+                    android:textColor="@color/bgr_white"
+                    android:textSize="@dimen/h3_text_size" />
+                <TextView
+                    android:text="5. Освободите проезжую часть, если движению других ТС создается препятствие (автомобили нельзя перемещать без указания сотрудников ГИБДД);"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/textDescriptionFive"
+                    android:textColor="@color/bgr_white"
+                    android:textSize="@dimen/h3_text_size" />
+                <TextView
+                    android:text="6. Позвоните в контакт-центр партнера ООО РСО «ЕВРОИНС» по телефону: 8 (800) 775-10-53 для получения консультации."
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/textDescriptionSix"
+                    android:textColor="@color/bgr_white"
+                    android:textSize="@dimen/h3_text_size" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:paddingTop="30dp"
+                    android:layout_height="50dp">
+                    <TextView
+                        android:text="Как получить страховое возмещение"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textTitleTwo"
+                        android:textSize="@dimen/h3_text_size"
+                        android:textColor="@color/text_orange" />
+                </RelativeLayout>
+                <TextView
+                      android:text="В течение 10 календарных дней заявите о страховом случае в ЕВРОИНС:"
+                      android:textAppearance="?android:attr/textAppearanceMedium"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginBottom="30dp"
+                      android:id="@+id/textDescriptionSeven"
+                      android:textColor="@color/bgr_white"
+                      android:textSize="@dimen/h3_text_size" />
+                <TextView
+                        android:text="1. Предъявите поврежденный автомобиль для осмотра"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/textDescriptionEight"
+                        android:textColor="@color/bgr_white"
+                        android:textSize="@dimen/h3_text_size" />
+                <TextView
+                        android:text="2. Подготовьте и передайте в ЕВРОИНС комплект документов для возмещения ущерба:"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/textDescriptionNine"
+                        android:textColor="@color/bgr_white"
+                        android:textSize="@dimen/h3_text_size" />
+                <TextView
+                         android:text="- извещение (заявление) о страховом случае (заполняется в офисе партнера ЕВРОИНС);"
+                         android:textAppearance="?android:attr/textAppearanceMedium"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="20dp"
+                         android:layout_marginTop="10dp"
+                         android:id="@+id/textDescriptionTen"
+                         android:textColor="@color/bgr_white"
+                         android:textSize="@dimen/h3_text_size" />
+                <TextView
+                         android:text="- справка по Форме № 154 с указанием перечня деталей, поврежденных в результате ДТП, выданная сотрудниками ГИБДД."
+                         android:textAppearance="?android:attr/textAppearanceMedium"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="20dp"
+                         android:layout_marginTop="10dp"
+                         android:id="@+id/textDescriptionEleven"
+                         android:textColor="@color/bgr_white"
+                         android:textSize="@dimen/h3_text_size" />
+                <TextView
+                         android:text="- оригинал или заверенная копия протокола об административном правонарушении, составленного сотрудником ГИБДД;"
+                         android:textAppearance="?android:attr/textAppearanceMedium"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="20dp"
+                         android:layout_marginTop="10dp"
+                         android:id="@+id/textDescriptionTwelve"
+                         android:textColor="@color/bgr_white"
+                         android:textSize="@dimen/h3_text_size" />
+              <TextView
+                         android:text="- оригинал или заверенная копия постановления по делу об административном правонарушении (определения об отказе в возбуждении дела об административном правонарушении) – если составление данных документов является обязательным;"
+                         android:textAppearance="?android:attr/textAppearanceMedium"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="20dp"
+                         android:layout_marginTop="10dp"
+                         android:id="@+id/textDescriptionThirteen"
+                         android:textColor="@color/bgr_white"
+                         android:textSize="@dimen/h3_text_size" />
+              <TextView
+                         android:text="- регистрационные документы на ТС - свидетельство о регистрации, либо заменяющий документ;"
+                         android:textAppearance="?android:attr/textAppearanceMedium"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="20dp"
+                         android:layout_marginTop="10dp"
+                         android:id="@+id/textDescriptionFourteen"
+                         android:textColor="@color/bgr_white"
+                         android:textSize="@dimen/h3_text_size" />
+              <TextView
+                         android:text="- водительское удостоверение лица, находившегося за рулем в момент ДТП, либо документ, его заменяющий;"
+                         android:textAppearance="?android:attr/textAppearanceMedium"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="20dp"
+                         android:layout_marginTop="10dp"
+                         android:id="@+id/textDescriptionFifteen"
+                         android:textColor="@color/bgr_white"
+                         android:textSize="@dimen/h3_text_size" />
+              <TextView
+                         android:text="- документ, удостоверяющий личность заявителя."
+                         android:textAppearance="?android:attr/textAppearanceMedium"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="20dp"
+                         android:layout_marginTop="10dp"
+                         android:id="@+id/textDescriptioSixteen"
+                         android:textColor="@color/bgr_white"
+                         android:textSize="@dimen/h3_text_size" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/layoutCreateNewEvent"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/submit_button_color"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="64dp">
+        <TextView
+            android:text="Заявить о новом событии"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textDeclareNewEventTitle"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/h2_text_size"
+            android:textColor="@color/bgr_white" />
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/fragmentMenu"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_bottom" />
+</RelativeLayout>

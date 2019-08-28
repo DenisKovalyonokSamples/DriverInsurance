@@ -1,0 +1,576 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{D3D2AE78-B86A-4D25-8F0B-76169B9BF11A}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>DI.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>DI.iOS</AssemblyName>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchArch>ARM64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\Base\BaseController.cs" />
+    <Compile Include="Controllers\Base\BaseFormController.cs" />
+    <Compile Include="Controllers\ContactsController.cs" />
+    <Compile Include="Controllers\ContactsController.designer.cs">
+      <DependentUpon>ContactsController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ErrorInfoController.cs" />
+    <Compile Include="Controllers\ErrorInfoController.designer.cs">
+      <DependentUpon>ErrorInfoController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\EventsController.cs" />
+    <Compile Include="Controllers\EventsController.designer.cs">
+      <DependentUpon>EventsController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\MainController.cs" />
+    <Compile Include="Controllers\MainController.designer.cs">
+      <DependentUpon>MainController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\PasswordLoginController.cs" />
+    <Compile Include="Controllers\PasswordLoginController.designer.cs">
+      <DependentUpon>PasswordLoginController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\PasswordRestoreController.cs" />
+    <Compile Include="Controllers\PasswordRestoreController.designer.cs">
+      <DependentUpon>PasswordRestoreController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ProfileDetailsController.cs" />
+    <Compile Include="Controllers\ProfileDetailsController.designer.cs">
+      <DependentUpon>ProfileDetailsController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\RegisterPhoneController.cs" />
+    <Compile Include="Controllers\RegisterPhoneController.designer.cs">
+      <DependentUpon>RegisterPhoneController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\SupportController.cs" />
+    <Compile Include="Controllers\SupportController.designer.cs">
+      <DependentUpon>SupportController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ValidateSMSCodeController.cs" />
+    <Compile Include="Controllers\ValidateSMSCodeController.designer.cs">
+      <DependentUpon>ValidateSMSCodeController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Extensions\TextFieldExtensions.cs" />
+    <Compile Include="Fragments\Base\BaseFragment.cs" />
+    <Compile Include="Fragments\BonusesFragment.cs" />
+    <Compile Include="Fragments\BonusesFragment.designer.cs">
+      <DependentUpon>BonusesFragment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fragments\CurrentRatingFragment.cs" />
+    <Compile Include="Fragments\CurrentRatingFragment.designer.cs">
+      <DependentUpon>CurrentRatingFragment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fragments\DemoModeFragment.cs" />
+    <Compile Include="Fragments\DemoModeFragment.designer.cs">
+      <DependentUpon>DemoModeFragment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fragments\DynamicsFragment.cs" />
+    <Compile Include="Fragments\DynamicsFragment.designer.cs">
+      <DependentUpon>DynamicsFragment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fragments\MainFragment.cs" />
+    <Compile Include="Fragments\MainFragment.designer.cs">
+      <DependentUpon>MainFragment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fragments\MoreFragment.cs" />
+    <Compile Include="Fragments\MoreFragment.designer.cs">
+      <DependentUpon>MoreFragment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fragments\PoliciesFragment.cs" />
+    <Compile Include="Fragments\PoliciesFragment.designer.cs">
+      <DependentUpon>PoliciesFragment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fragments\PolicyActiveFragment.cs" />
+    <Compile Include="Fragments\PolicyActiveFragment.designer.cs">
+      <DependentUpon>PolicyActiveFragment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fragments\PolicyContractsFragment.cs" />
+    <Compile Include="Fragments\PolicyContractsFragment.designer.cs">
+      <DependentUpon>PolicyContractsFragment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fragments\PolicyInfoMessageFragment.cs" />
+    <Compile Include="Fragments\PolicyInfoMessageFragment.designer.cs">
+      <DependentUpon>PolicyInfoMessageFragment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fragments\PolicyRequestFragment.cs" />
+    <Compile Include="Fragments\PolicyRequestFragment.designer.cs">
+      <DependentUpon>PolicyRequestFragment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fragments\UsefulFragment.cs" />
+    <Compile Include="Fragments\UsefulFragment.designer.cs">
+      <DependentUpon>UsefulFragment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\DeviceInfoHelper.cs" />
+    <Compile Include="Localization\AppResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <None Include="GettingStarted.Xamarin" />
+    <None Include="Info.plist">
+      <SubType>Designer</SubType>
+    </None>
+    <Compile Include="Managers\ColorManager.cs" />
+    <Compile Include="Managers\DataConverter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
+    <Content Include="Entitlements.plist" />
+    <InterfaceDefinition Include="Main_iPhone.storyboard" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="HockeySDK, Version=5.0.6585.25315, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\HockeySDK.Xamarin.5.1.2\lib\Xamarin.iOS10\HockeySDK.dll</HintPath>
+    </Reference>
+    <Reference Include="HockeySDK.iOSBindings, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\HockeySDK.Xamarin.5.1.2\lib\Xamarin.iOS10\HockeySDK.iOSBindings.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\netstandard1.3\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite-net, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\sqlite-net-pcl.1.4.118\lib\netstandard1.1\SQLite-net.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_green, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a84b7dcfb1391f7f, processorArchitecture=MSIL">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.1.1.9\lib\Xamarin.iOS10\SQLitePCLRaw.batteries_green.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_v2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8226ea5df37bcae9, processorArchitecture=MSIL">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_green.1.1.9\lib\Xamarin.iOS10\SQLitePCLRaw.batteries_v2.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1488e028ca7ab535, processorArchitecture=MSIL">
+      <HintPath>..\packages\SQLitePCLRaw.core.1.1.9\lib\Xamarin.iOS10\SQLitePCLRaw.core.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.provider.sqlite3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=62684c7b4f184e3f, processorArchitecture=MSIL">
+      <HintPath>..\packages\SQLitePCLRaw.provider.sqlite3.ios_unified.1.1.9\lib\Xamarin.iOS10\SQLitePCLRaw.provider.sqlite3.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SFChart.iOS, Version=15.4451.0.20, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfChart.IOS.15.4.0.20\lib\Xamarin.iOS10\Syncfusion.SFChart.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Entitlements.plist" />
+    <BundleResource Include="Resources\add_fab_icon\add_fab_icon%402x.png" />
+    <BundleResource Include="Resources\add_fab_icon\add_fab_icon%402x~ipad.png" />
+    <BundleResource Include="Resources\add_fab_icon\add_fab_icon%403x.png" />
+    <BundleResource Include="Resources\add_fab_icon\add_fab_icon~ipad.png" />
+    <BundleResource Include="Resources\arrow_compress\arrow_compress%402x.png" />
+    <BundleResource Include="Resources\arrow_compress\arrow_compress%402x~ipad.png" />
+    <BundleResource Include="Resources\arrow_compress\arrow_compress%403x.png" />
+    <BundleResource Include="Resources\arrow_compress\arrow_compress~ipad.png" />
+    <BundleResource Include="Resources\arrow_expand\arrow_expand%402x.png" />
+    <BundleResource Include="Resources\arrow_expand\arrow_expand%402x~ipad.png" />
+    <BundleResource Include="Resources\arrow_expand\arrow_expand%403x.png" />
+    <BundleResource Include="Resources\arrow_expand\arrow_expand~ipad.png" />
+    <BundleResource Include="Resources\balance_white\balance_white%402x.png" />
+    <BundleResource Include="Resources\balance_white\balance_white%402x~ipad.png" />
+    <BundleResource Include="Resources\balance_white\balance_white%403x.png" />
+    <BundleResource Include="Resources\balance_white\balance_white~ipad.png" />
+    <BundleResource Include="Resources\call_green\call_green%402x.png" />
+    <BundleResource Include="Resources\call_green\call_green%402x~ipad.png" />
+    <BundleResource Include="Resources\call_green\call_green%403x.png" />
+    <BundleResource Include="Resources\call_green\call_green~ipad.png" />
+    <BundleResource Include="Resources\chat_camera\chat_camera%402x.png" />
+    <BundleResource Include="Resources\chat_camera\chat_camera%402x~ipad.png" />
+    <BundleResource Include="Resources\chat_camera\chat_camera%403x.png" />
+    <BundleResource Include="Resources\chat_camera\chat_camera~ipad.png" />
+    <BundleResource Include="Resources\chat_docs\chat_docs%402x.png" />
+    <BundleResource Include="Resources\chat_docs\chat_docs%402x~ipad.png" />
+    <BundleResource Include="Resources\chat_docs\chat_docs%403x.png" />
+    <BundleResource Include="Resources\chat_docs\chat_docs~ipad.png" />
+    <BundleResource Include="Resources\chat_photos\chat_photos%402x.png" />
+    <BundleResource Include="Resources\chat_photos\chat_photos%402x~ipad.png" />
+    <BundleResource Include="Resources\chat_photos\chat_photos%403x.png" />
+    <BundleResource Include="Resources\chat_photos\chat_photos~ipad.png" />
+    <BundleResource Include="Resources\circle_orange\circle_orange%402x.png" />
+    <BundleResource Include="Resources\circle_orange\circle_orange%402x~ipad.png" />
+    <BundleResource Include="Resources\circle_orange\circle_orange%403x.png" />
+    <BundleResource Include="Resources\circle_orange\circle_orange~ipad.png" />
+    <BundleResource Include="Resources\circle_white\circle_white%402x.png" />
+    <BundleResource Include="Resources\circle_white\circle_white%402x~ipad.png" />
+    <BundleResource Include="Resources\circle_white\circle_white%403x.png" />
+    <BundleResource Include="Resources\circle_white\circle_white~ipad.png" />
+    <BundleResource Include="Resources\create_white\create_white%402x.png" />
+    <BundleResource Include="Resources\create_white\create_white%402x~ipad.png" />
+    <BundleResource Include="Resources\create_white\create_white%403x.png" />
+    <BundleResource Include="Resources\create_white\create_white~ipad.png" />
+    <BundleResource Include="Resources\delete_white\delete_white%402x.png" />
+    <BundleResource Include="Resources\delete_white\delete_white%402x~ipad.png" />
+    <BundleResource Include="Resources\delete_white\delete_white%403x.png" />
+    <BundleResource Include="Resources\delete_white\delete_white~ipad.png" />
+    <BundleResource Include="Resources\help_ic\help_ic%402x.png" />
+    <BundleResource Include="Resources\help_ic\help_ic%402x~ipad.png" />
+    <BundleResource Include="Resources\help_ic\help_ic%403x.png" />
+    <BundleResource Include="Resources\help_ic\help_ic~ipad.png" />
+    <BundleResource Include="Resources\ic_acc\ic_acc%402x.png" />
+    <BundleResource Include="Resources\ic_acc\ic_acc%402x~ipad.png" />
+    <BundleResource Include="Resources\ic_acc\ic_acc%403x.png" />
+    <BundleResource Include="Resources\ic_acc\ic_acc~ipad.png" />
+    <BundleResource Include="Resources\ic_activity\ic_activity%402x.png" />
+    <BundleResource Include="Resources\ic_activity\ic_activity%402x~ipad.png" />
+    <BundleResource Include="Resources\ic_activity\ic_activity%403x.png" />
+    <BundleResource Include="Resources\ic_activity\ic_activity~ipad.png" />
+    <BundleResource Include="Resources\ic_arrow\ic_arrow%402x.png" />
+    <BundleResource Include="Resources\ic_arrow\ic_arrow%402x~ipad.png" />
+    <BundleResource Include="Resources\ic_arrow\ic_arrow%403x.png" />
+    <BundleResource Include="Resources\ic_arrow\ic_arrow~ipad.png" />
+    <BundleResource Include="Resources\ic_bonus\ic_bonus%402x.png" />
+    <BundleResource Include="Resources\ic_bonus\ic_bonus%402x~ipad.png" />
+    <BundleResource Include="Resources\ic_bonus\ic_bonus%403x.png" />
+    <BundleResource Include="Resources\ic_bonus\ic_bonus~ipad.png" />
+    <BundleResource Include="Resources\ic_brake\ic_brake%402x.png" />
+    <BundleResource Include="Resources\ic_brake\ic_brake%402x~ipad.png" />
+    <BundleResource Include="Resources\ic_brake\ic_brake%403x.png" />
+    <BundleResource Include="Resources\ic_brake\ic_brake~ipad.png" />
+    <BundleResource Include="Resources\ic_car\ic_car%402x.png" />
+    <BundleResource Include="Resources\ic_car\ic_car%402x~ipad.png" />
+    <BundleResource Include="Resources\ic_car\ic_car%403x.png" />
+    <BundleResource Include="Resources\ic_car\ic_car~ipad.png" />
+    <BundleResource Include="Resources\ic_check_box\ic_check_box%402x.png" />
+    <BundleResource Include="Resources\ic_check_box\ic_check_box%402x~ipad.png" />
+    <BundleResource Include="Resources\ic_check_box\ic_check_box%403x.png" />
+    <BundleResource Include="Resources\ic_check_box\ic_check_box~ipad.png" />
+    <BundleResource Include="Resources\ic_list\ic_list%402x.png" />
+    <BundleResource Include="Resources\ic_list\ic_list%402x~ipad.png" />
+    <BundleResource Include="Resources\ic_list\ic_list%403x.png" />
+    <BundleResource Include="Resources\ic_list\ic_list~ipad.png" />
+    <BundleResource Include="Resources\ic_more\ic_more%402x.png" />
+    <BundleResource Include="Resources\ic_more\ic_more%402x~ipad.png" />
+    <BundleResource Include="Resources\ic_more\ic_more%403x.png" />
+    <BundleResource Include="Resources\ic_more\ic_more~ipad.png" />
+    <BundleResource Include="Resources\ic_navigation\ic_navigation%402x.png" />
+    <BundleResource Include="Resources\ic_navigation\ic_navigation%402x~ipad.png" />
+    <BundleResource Include="Resources\ic_navigation\ic_navigation%403x.png" />
+    <BundleResource Include="Resources\ic_navigation\ic_navigation~ipad.png" />
+    <BundleResource Include="Resources\ic_polises\ic_polises%402x.png" />
+    <BundleResource Include="Resources\ic_polises\ic_polises%402x~ipad.png" />
+    <BundleResource Include="Resources\ic_polises\ic_polises%403x.png" />
+    <BundleResource Include="Resources\ic_polises\ic_polises~ipad.png" />
+    <BundleResource Include="Resources\ic_road\ic_road%402x.png" />
+    <BundleResource Include="Resources\ic_road\ic_road%402x~ipad.png" />
+    <BundleResource Include="Resources\ic_road\ic_road%403x.png" />
+    <BundleResource Include="Resources\ic_road\ic_road~ipad.png" />
+    <BundleResource Include="Resources\ic_speed\ic_speed%402x.png" />
+    <BundleResource Include="Resources\ic_speed\ic_speed%402x~ipad.png" />
+    <BundleResource Include="Resources\ic_speed\ic_speed%403x.png" />
+    <BundleResource Include="Resources\ic_speed\ic_speed~ipad.png" />
+    <BundleResource Include="Resources\ic_star\ic_star%402x.png" />
+    <BundleResource Include="Resources\ic_star\ic_star%402x~ipad.png" />
+    <BundleResource Include="Resources\ic_star\ic_star%403x.png" />
+    <BundleResource Include="Resources\ic_star\ic_star~ipad.png" />
+    <BundleResource Include="Resources\ic_time\ic_time%402x.png" />
+    <BundleResource Include="Resources\ic_time\ic_time%402x~ipad.png" />
+    <BundleResource Include="Resources\ic_time\ic_time%403x.png" />
+    <BundleResource Include="Resources\ic_time\ic_time~ipad.png" />
+    <BundleResource Include="Resources\ic_useful\ic_useful%402x.png" />
+    <BundleResource Include="Resources\ic_useful\ic_useful%402x~ipad.png" />
+    <BundleResource Include="Resources\ic_useful\ic_useful%403x.png" />
+    <BundleResource Include="Resources\ic_useful\ic_useful~ipad.png" />
+    <BundleResource Include="Resources\ic_user_location\ic_user_location%402x.png" />
+    <BundleResource Include="Resources\ic_user_location\ic_user_location%402x~ipad.png" />
+    <BundleResource Include="Resources\ic_user_location\ic_user_location%403x.png" />
+    <BundleResource Include="Resources\ic_user_location\ic_user_location~ipad.png" />
+    <BundleResource Include="Resources\ic_warning\ic_warning%402x.png" />
+    <BundleResource Include="Resources\ic_warning\ic_warning%402x~ipad.png" />
+    <BundleResource Include="Resources\ic_warning\ic_warning%403x.png" />
+    <BundleResource Include="Resources\ic_warning\ic_warning~ipad.png" />
+    <BundleResource Include="Resources\ic_wheel\ic_wheel%402x.png" />
+    <BundleResource Include="Resources\ic_wheel\ic_wheel%402x~ipad.png" />
+    <BundleResource Include="Resources\ic_wheel\ic_wheel%403x.png" />
+    <BundleResource Include="Resources\ic_wheel\ic_wheel~ipad.png" />
+    <BundleResource Include="Resources\info_white\info_white%402x.png" />
+    <BundleResource Include="Resources\info_white\info_white%402x~ipad.png" />
+    <BundleResource Include="Resources\info_white\info_white%403x.png" />
+    <BundleResource Include="Resources\info_white\info_white~ipad.png" />
+    <BundleResource Include="Resources\pass_item_empty\pass_item_empty%402x.png" />
+    <BundleResource Include="Resources\pass_item_empty\pass_item_empty%402x~ipad.png" />
+    <BundleResource Include="Resources\pass_item_empty\pass_item_empty%403x.png" />
+    <BundleResource Include="Resources\pass_item_empty\pass_item_empty~ipad.png" />
+    <BundleResource Include="Resources\pass_item_filled\pass_item_filled%402x.png" />
+    <BundleResource Include="Resources\pass_item_filled\pass_item_filled%402x~ipad.png" />
+    <BundleResource Include="Resources\pass_item_filled\pass_item_filled%403x.png" />
+    <BundleResource Include="Resources\pass_item_filled\pass_item_filled~ipad.png" />
+    <BundleResource Include="Resources\show_less\show_less%402x.png" />
+    <BundleResource Include="Resources\show_less\show_less%402x~ipad.png" />
+    <BundleResource Include="Resources\show_less\show_less%403x.png" />
+    <BundleResource Include="Resources\show_less\show_less~ipad.png" />
+    <BundleResource Include="Resources\show_more\show_more%402x.png" />
+    <BundleResource Include="Resources\show_more\show_more%402x~ipad.png" />
+    <BundleResource Include="Resources\show_more\show_more%403x.png" />
+    <BundleResource Include="Resources\show_more\show_more~ipad.png" />
+    <BundleResource Include="Resources\stars_white\stars_white%402x.png" />
+    <BundleResource Include="Resources\stars_white\stars_white%402x~ipad.png" />
+    <BundleResource Include="Resources\stars_white\stars_white%403x.png" />
+    <BundleResource Include="Resources\stars_white\stars_white~ipad.png" />
+    <BundleResource Include="Resources\add_circle_white\add_circle_white%402x.png" />
+    <BundleResource Include="Resources\add_circle_white\add_circle_white%402x~ipad.png" />
+    <BundleResource Include="Resources\add_circle_white\add_circle_white%403x.png" />
+    <BundleResource Include="Resources\add_circle_white\add_circle_white~ipad.png" />
+    <BundleResource Include="Resources\chat_send\chat_send%402x.png" />
+    <BundleResource Include="Resources\chat_send\chat_send%402x~ipad.png" />
+    <BundleResource Include="Resources\chat_send\chat_send%403x.png" />
+    <BundleResource Include="Resources\chat_send\chat_send~ipad.png" />
+    <BundleResource Include="Resources\chat_send_blocked\chat_send_blocked%402x.png" />
+    <BundleResource Include="Resources\chat_send_blocked\chat_send_blocked%402x~ipad.png" />
+    <BundleResource Include="Resources\chat_send_blocked\chat_send_blocked%403x.png" />
+    <BundleResource Include="Resources\chat_send_blocked\chat_send_blocked~ipad.png" />
+    <BundleResource Include="Resources\docx\docx%402x.png" />
+    <BundleResource Include="Resources\docx\docx%402x~ipad.png" />
+    <BundleResource Include="Resources\docx\docx%403x.png" />
+    <BundleResource Include="Resources\docx\docx~ipad.png" />
+    <BundleResource Include="Resources\fb\fb%402x.png" />
+    <BundleResource Include="Resources\fb\fb%402x~ipad.png" />
+    <BundleResource Include="Resources\fb\fb%403x.png" />
+    <BundleResource Include="Resources\fb\fb~ipad.png" />
+    <BundleResource Include="Resources\group_2\group_2%402x.png" />
+    <BundleResource Include="Resources\group_2\group_2%402x~ipad.png" />
+    <BundleResource Include="Resources\group_2\group_2%403x.png" />
+    <BundleResource Include="Resources\group_2\group_2~ipad.png" />
+    <BundleResource Include="Resources\ic_contacts\ic_contacts%402x.png" />
+    <BundleResource Include="Resources\ic_contacts\ic_contacts%402x~ipad.png" />
+    <BundleResource Include="Resources\ic_contacts\ic_contacts%403x.png" />
+    <BundleResource Include="Resources\ic_contacts\ic_contacts~ipad.png" />
+    <BundleResource Include="Resources\ic_date_list\ic_date_list%402x.png" />
+    <BundleResource Include="Resources\ic_date_list\ic_date_list%402x~ipad.png" />
+    <BundleResource Include="Resources\ic_date_list\ic_date_list%403x.png" />
+    <BundleResource Include="Resources\ic_date_list\ic_date_list~ipad.png" />
+    <BundleResource Include="Resources\ic_doc\ic_doc%402x.png" />
+    <BundleResource Include="Resources\ic_doc\ic_doc%402x~ipad.png" />
+    <BundleResource Include="Resources\ic_doc\ic_doc%403x.png" />
+    <BundleResource Include="Resources\ic_doc\ic_doc~ipad.png" />
+    <BundleResource Include="Resources\ic_image\ic_image%402x.png" />
+    <BundleResource Include="Resources\ic_image\ic_image%402x~ipad.png" />
+    <BundleResource Include="Resources\ic_image\ic_image%403x.png" />
+    <BundleResource Include="Resources\ic_image\ic_image~ipad.png" />
+    <BundleResource Include="Resources\ic_lock_on\ic_lock_on%402x.png" />
+    <BundleResource Include="Resources\ic_lock_on\ic_lock_on%402x~ipad.png" />
+    <BundleResource Include="Resources\ic_lock_on\ic_lock_on%403x.png" />
+    <BundleResource Include="Resources\ic_lock_on\ic_lock_on~ipad.png" />
+    <BundleResource Include="Resources\ic_lock_open\ic_lock_open%402x.png" />
+    <BundleResource Include="Resources\ic_lock_open\ic_lock_open%402x~ipad.png" />
+    <BundleResource Include="Resources\ic_lock_open\ic_lock_open%403x.png" />
+    <BundleResource Include="Resources\ic_lock_open\ic_lock_open~ipad.png" />
+    <BundleResource Include="Resources\ic_mac\ic_mac%402x.png" />
+    <BundleResource Include="Resources\ic_mac\ic_mac%402x~ipad.png" />
+    <BundleResource Include="Resources\ic_mac\ic_mac%403x.png" />
+    <BundleResource Include="Resources\ic_mac\ic_mac~ipad.png" />
+    <BundleResource Include="Resources\ic_mail\ic_mail%402x.png" />
+    <BundleResource Include="Resources\ic_mail\ic_mail%402x~ipad.png" />
+    <BundleResource Include="Resources\ic_mail\ic_mail%403x.png" />
+    <BundleResource Include="Resources\ic_mail\ic_mail~ipad.png" />
+    <BundleResource Include="Resources\ic_upload\ic_upload%402x.png" />
+    <BundleResource Include="Resources\ic_upload\ic_upload%402x~ipad.png" />
+    <BundleResource Include="Resources\ic_upload\ic_upload%403x.png" />
+    <BundleResource Include="Resources\ic_upload\ic_upload~ipad.png" />
+    <BundleResource Include="Resources\jpg\jpg%402x.png" />
+    <BundleResource Include="Resources\jpg\jpg%402x~ipad.png" />
+    <BundleResource Include="Resources\jpg\jpg%403x.png" />
+    <BundleResource Include="Resources\jpg\jpg~ipad.png" />
+    <BundleResource Include="Resources\pdf\pdf%402x.png" />
+    <BundleResource Include="Resources\pdf\pdf%402x~ipad.png" />
+    <BundleResource Include="Resources\pdf\pdf%403x.png" />
+    <BundleResource Include="Resources\pdf\pdf~ipad.png" />
+    <BundleResource Include="Resources\png\png%402x.png" />
+    <BundleResource Include="Resources\png\png%402x~ipad.png" />
+    <BundleResource Include="Resources\png\png%403x.png" />
+    <BundleResource Include="Resources\png\png~ipad.png" />
+    <BundleResource Include="Resources\logo\logo%402x.png" />
+    <BundleResource Include="Resources\logo\logo%402x~ipad.png" />
+    <BundleResource Include="Resources\logo\logo%403x.png" />
+    <BundleResource Include="Resources\logo\logo~ipad.png" />
+    <BundleResource Include="Resources\oval\oval%402x.png" />
+    <BundleResource Include="Resources\oval\oval%402x~ipad.png" />
+    <BundleResource Include="Resources\oval\oval%403x.png" />
+    <BundleResource Include="Resources\oval\oval~ipad.png" />
+    <BundleResource Include="Resources\oval_empty\oval_empty%402x.png" />
+    <BundleResource Include="Resources\oval_empty\oval_empty%402x~ipad.png" />
+    <BundleResource Include="Resources\oval_empty\oval_empty%403x.png" />
+    <BundleResource Include="Resources\oval_empty\oval_empty~ipad.png" />
+    <BundleResource Include="Resources\pin\pin%402x.png" />
+    <BundleResource Include="Resources\pin\pin%402x~ipad.png" />
+    <BundleResource Include="Resources\pin\pin%403x.png" />
+    <BundleResource Include="Resources\pin\pin~ipad.png" />
+    <BundleResource Include="Resources\pin_finish\pin_finish%402x.png" />
+    <BundleResource Include="Resources\pin_finish\pin_finish%402x~ipad.png" />
+    <BundleResource Include="Resources\pin_finish\pin_finish%403x.png" />
+    <BundleResource Include="Resources\pin_finish\pin_finish~ipad.png" />
+    <BundleResource Include="Resources\pin_start\pin_start%402x.png" />
+    <BundleResource Include="Resources\pin_start\pin_start%402x~ipad.png" />
+    <BundleResource Include="Resources\pin_start\pin_start%403x.png" />
+    <BundleResource Include="Resources\pin_start\pin_start~ipad.png" />
+    <BundleResource Include="Resources\rate\rate%402x.png" />
+    <BundleResource Include="Resources\rate\rate%402x~ipad.png" />
+    <BundleResource Include="Resources\rate\rate%403x.png" />
+    <BundleResource Include="Resources\rate\rate~ipad.png" />
+    <BundleResource Include="Resources\round\round%402x.png" />
+    <BundleResource Include="Resources\round\round%402x~ipad.png" />
+    <BundleResource Include="Resources\round\round%403x.png" />
+    <BundleResource Include="Resources\round\round~ipad.png" />
+    <BundleResource Include="Resources\star_line_five\star_line_five%402x.png" />
+    <BundleResource Include="Resources\star_line_five\star_line_five%402x~ipad.png" />
+    <BundleResource Include="Resources\star_line_five\star_line_five%403x.png" />
+    <BundleResource Include="Resources\star_line_five\star_line_five~ipad.png" />
+    <BundleResource Include="Resources\star_line_four\star_line_four%402x.png" />
+    <BundleResource Include="Resources\star_line_four\star_line_four%402x~ipad.png" />
+    <BundleResource Include="Resources\star_line_four\star_line_four%403x.png" />
+    <BundleResource Include="Resources\star_line_four\star_line_four~ipad.png" />
+    <BundleResource Include="Resources\star_line_one\star_line_one%402x.png" />
+    <BundleResource Include="Resources\star_line_one\star_line_one%402x~ipad.png" />
+    <BundleResource Include="Resources\star_line_one\star_line_one%403x.png" />
+    <BundleResource Include="Resources\star_line_one\star_line_one~ipad.png" />
+    <BundleResource Include="Resources\star_line_three\star_line_three%402x.png" />
+    <BundleResource Include="Resources\star_line_three\star_line_three%402x~ipad.png" />
+    <BundleResource Include="Resources\star_line_three\star_line_three%403x.png" />
+    <BundleResource Include="Resources\star_line_three\star_line_three~ipad.png" />
+    <BundleResource Include="Resources\star_line_two\star_line_two%402x.png" />
+    <BundleResource Include="Resources\star_line_two\star_line_two%402x~ipad.png" />
+    <BundleResource Include="Resources\star_line_two\star_line_two%403x.png" />
+    <BundleResource Include="Resources\star_line_two\star_line_two~ipad.png" />
+    <BundleResource Include="Resources\star_line_zero\star_line_zero%402x.png" />
+    <BundleResource Include="Resources\star_line_zero\star_line_zero%402x~ipad.png" />
+    <BundleResource Include="Resources\star_line_zero\star_line_zero%403x.png" />
+    <BundleResource Include="Resources\star_line_zero\star_line_zero~ipad.png" />
+    <BundleResource Include="Resources\user_placeholder\user_placeholder%402x.png" />
+    <BundleResource Include="Resources\user_placeholder\user_placeholder%402x~ipad.png" />
+    <BundleResource Include="Resources\user_placeholder\user_placeholder%403x.png" />
+    <BundleResource Include="Resources\user_placeholder\user_placeholder~ipad.png" />
+    <BundleResource Include="Resources\vk\vk%402x.png" />
+    <BundleResource Include="Resources\vk\vk%402x~ipad.png" />
+    <BundleResource Include="Resources\vk\vk%403x.png" />
+    <BundleResource Include="Resources\vk\vk~ipad.png" />
+    <BundleResource Include="Resources\arrow_back\arrow_back%402x.png" />
+    <BundleResource Include="Resources\arrow_back\arrow_back%402x~ipad.png" />
+    <BundleResource Include="Resources\arrow_back\arrow_back%403x.png" />
+    <BundleResource Include="Resources\arrow_back\arrow_back~ipad.png" />
+    <BundleResource Include="Resources\icon_for_screen\icon_for_screen%402x.png" />
+    <BundleResource Include="Resources\icon_for_screen\icon_for_screen%402x~ipad.png" />
+    <BundleResource Include="Resources\icon_for_screen\icon_for_screen%403x.png" />
+    <BundleResource Include="Resources\icon_for_screen\icon_for_screen~ipad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\120.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\152.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\167.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\180.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\29.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\40.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\58.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\76.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\80.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\87.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\LaunchImages.launchimage\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\LaunchImages.launchimage\launch@2x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\LaunchImages.launchimage\launch@2x~ipad.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\LaunchImages.launchimage\launch@3x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\LaunchImages.launchimage\launch~ipad.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Localization\AppResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>DI.Localization</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\AppResources.ru.resx" />
+  </ItemGroup>
+  <Import Project="..\DI.Shared\DI.Shared.projitems" Label="Shared" />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <Import Project="..\packages\NETStandard.Library.2.0.1\build\netstandard2.0\NETStandard.Library.targets" Condition="Exists('..\packages\NETStandard.Library.2.0.1\build\netstandard2.0\NETStandard.Library.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\NETStandard.Library.2.0.1\build\netstandard2.0\NETStandard.Library.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NETStandard.Library.2.0.1\build\netstandard2.0\NETStandard.Library.targets'))" />
+  </Target>
+</Project>

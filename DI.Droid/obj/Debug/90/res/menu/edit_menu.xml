@@ -1,0 +1,1 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:myapp="http://schemas.android.com/apk/res-auto"><item android:id="@+id/action_delete" android:icon="@mipmap/delete_white" myapp:showAsAction="always" /></menu>

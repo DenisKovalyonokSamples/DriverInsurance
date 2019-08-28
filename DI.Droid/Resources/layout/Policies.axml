@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark_blue">
+    <ProgressBar
+        android:id="@+id/progressBarLoading"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="24dip"
+        android:maxHeight="24dip"
+        android:visibility="invisible"
+        android:indeterminateOnly="true"
+        android:layout_gravity="top"
+        style="?android:attr/progressBarStyleHorizontal" />
+    <ScrollView
+        android:id="@+id/scrollMainContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp">
+            <RelativeLayout
+                android:id="@+id/layoutCompanyName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <TextView
+                    android:text="Имя страховой компании"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textCurrentCompanyName"
+                    android:layout_centerInParent="true"
+                    android:textSize="@dimen/h2_text_size"
+                    android:textColor="@color/submit_button_color" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <TextView
+                    android:text="Номер полиса"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textPolicyNumberTitle"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="17dp"
+                    android:textColor="@color/bgr_white" />
+                <TextView
+                    android:text="00-00-00000"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textPolicyNumber"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/text_orange"
+                    android:textSize="@dimen/h1_text_size" />
+            </RelativeLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grid_separator_color" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/background_dark_blue"
+                android:minWidth="25px"
+                android:minHeight="25px">
+                <TextView
+                    android:text="Страховая сумма"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textInsuranceSumTitle"
+                    android:textColor="@color/bgr_white"
+                    android:textSize="17dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp" />
+                <TextView
+                    android:text="11 000"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textInsuranceSum"
+                    android:textColor="@color/text_orange"
+                    android:textSize="@dimen/h1_text_size"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp" />
+            </RelativeLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grid_separator_color" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/background_dark_blue"
+                android:minWidth="25px"
+                android:minHeight="25px">
+                <TextView
+                    android:text="Франшиза"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textFranchiseTitle"
+                    android:textColor="@color/bgr_white"
+                    android:textSize="17dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp" />
+                <TextView
+                    android:text="11 000"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textFranchise"
+                    android:textColor="@color/text_orange"
+                    android:textSize="@dimen/h1_text_size"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grid_separator_color" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/background_dark_blue"
+                android:minWidth="25px"
+                android:minHeight="25px">
+                <TextView
+                    android:text="Страховая премия"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textInsuranceAwardTitle"
+                    android:textColor="@color/bgr_white"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true" />
+                <TextView
+                    android:text="3 000"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textInsuranceAward"
+                    android:textColor="@color/text_orange"
+                    android:textSize="@dimen/h1_text_size"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp" />
+            </RelativeLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grid_separator_color" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/background_dark_blue">
+                <TextView
+                    android:text="Полис действует "
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textPolicyLimitDateTitle"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="17dp"
+                    android:textColor="@color/bgr_white"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp" />
+                <TextView
+                    android:text="12.10.2017"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textPolicyLimitDate"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/bgr_white"
+                    android:textSize="@dimen/h2_text_size"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="40dp" />
+            </RelativeLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grid_separator_color" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/layoutServiceConditions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minWidth="25px"
+                android:minHeight="25px">
+                <TextView
+                    android:text="СЕРВИСНЫЕ УСЛОВИЯ"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textServiceConditionsTitle"
+                    android:layout_centerInParent="true"
+                    android:textSize="@dimen/h3_text_size"
+                    android:textColor="@color/submit_button_color"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_horizontal" />
+                <TextView
+                    android:id="@+id/textServiceConditions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/description_message_color"
+                    android:layout_gravity="center"
+                    android:text="Данная оценка формируется на основании количества поездок и их средней продолжительности поездки"
+                    android:textSize="@dimen/h3_text_size"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="10dp" />
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/layoutPolicyRules"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:text="УСЛОВИЯ ПОЛИСА"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textPolicyRulesTitle"
+                    android:layout_centerInParent="true"
+                    android:textSize="@dimen/h3_text_size"
+                    android:textColor="@color/submit_button_color" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/background_dark_blue"
+                android:visibility="gone"
+                android:minWidth="25px"
+                android:minHeight="25px">
+                <TextView
+                    android:text="Прогноз стоймости полиса\n на новый период"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textPolicyCostForecastTitle"
+                    android:textColor="@color/text_light_blue"
+                    android:textSize="@dimen/h2_text_size"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_horizontal" />
+                <TextView
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textPolicyCostForecast"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/content_green"
+                    android:textSize="@dimen/h6_text_size"
+                    android:layout_below="@id/textPolicyCostForecastTitle"
+                    android:layout_marginTop="10dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/layoutExtendPolicy"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@color/actionbar_blue"
+                android:visibility="gone"
+                android:minWidth="25px"
+                android:minHeight="25px">
+                <TextView
+                    android:text="ПРОДЛИТЬ"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textExtendPolicyTitle"
+                    android:layout_centerInParent="true"
+                    android:textSize="@dimen/h2_text_size"
+                    android:textColor="@color/bgr_white" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:visibility="gone"
+                android:background="@color/background_light_blue">
+                <TextView
+                    android:text="Предыдущие договоры КАСКО"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textPreviousContractsTitle"
+                    android:layout_centerInParent="true"
+                    android:textSize="@dimen/h2_text_size"
+                    android:textColor="@color/text_light_blue" />
+                <ImageView
+                    android:id="@+id/imageViewShowMore"
+                    android:layout_height="40dp"
+                    android:layout_width="60dp"
+                    android:src="@mipmap/show_more"
+                    android:scaleType="center"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:id="@+id/layoutAddPolicyContainer"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:measureWithLargestChild="false"
+            android:paddingLeft="@dimen/padding_left"
+            android:paddingRight="@dimen/padding_right"
+            android:layout_centerVertical="true">
+            <RelativeLayout
+                android:id="@+id/layoutScoreContainer"
+                android:layout_alignParentTop="true"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+                <ImageView
+                    android:src="@mipmap/rate"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:id="@+id/imageAddPolicy"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp" />
+                <TextView
+                    android:text="Ваш текущий результат"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textCurrentScoreTitle"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="@dimen/h4_text_size"
+                    android:textColor="@color/description_message_color"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/imageAddPolicy" />
+                <TextView
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textCurrentScore"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/bgr_white"
+                    android:textSize="70dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp" />
+            </RelativeLayout>
+            <TextView
+                android:text="Узнайте сколько будет стоить КАСКО для Вас"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textNoPolicyTitle"
+                android:textColor="@color/bgr_white"
+                android:textSize="17sp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="25dp"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal" />
+            <Button
+                android:id="@+id/layoutGetPolicy"
+                android:gravity="center"
+                android:background="@drawable/button_round_green"
+                android:typeface="sans"
+                android:textColor="@color/bgr_white"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:textAllCaps="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ScrollView
+        android:visibility="gone"
+        android:id="@+id/layoutContractsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:background="@color/background_dark_blue"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </android.support.design.widget.CoordinatorLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/layoutShowAllContractsTitle">
+                <TextView
+                    android:text="Посмотреть все предложения"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textShowAllContractsTitle"
+                    android:layout_centerInParent="true"
+                    android:textSize="@dimen/h3_text_size"
+                    android:textColor="@color/submit_button_color" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/info_message_background"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="12dp">
+                    <ImageView
+                        android:layout_height="24dp"
+                        android:layout_width="24dp"
+                        android:src="@mipmap/info_white"
+                        android:scaleType="fitCenter"
+                        android:layout_gravity="center"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="4dp" />
+                </RelativeLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/textWeFoundContractsForYou"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/bgr_white"
+                        android:typeface="sans"
+                        android:layout_gravity="left"
+                        android:textSize="@dimen/h3_text_size" />
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <LinearLayout
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/info_message_background"
+                android:paddingTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="12dp">
+                    <ImageView
+                        android:layout_height="24dp"
+                        android:layout_width="24dp"
+                        android:src="@mipmap/info_white"
+                        android:scaleType="fitCenter"
+                        android:layout_gravity="center"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="4dp" />
+                </RelativeLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/textContractsDeadline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/bgr_white"
+                        android:typeface="sans"
+                        android:layout_gravity="left"
+                        android:textSize="@dimen/h3_text_size" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/layoutMessageContainer"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:visibility="gone">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/info_message_background"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="12dp">
+                <ImageView
+                    android:layout_height="24dp"
+                    android:layout_width="24dp"
+                    android:src="@mipmap/info_white"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="4dp" />
+            </RelativeLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="4dp"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/textFutureFeature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/bgr_white"
+                    android:typeface="sans"
+                    android:layout_gravity="left"
+                    android:textSize="@dimen/h3_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

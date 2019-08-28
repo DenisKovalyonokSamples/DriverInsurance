@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark_blue">
+    <ProgressBar
+        android:id="@+id/progressBarLoading"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="24dip"
+        android:maxHeight="24dip"
+        android:visibility="gone"
+        android:indeterminateOnly="true"
+        android:layout_gravity="top"
+        style="?android:attr/progressBarStyleHorizontal" />
+    <ScrollView
+        android:id="@+id/scrollMainContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_height="40dp"
+                android:layout_width="match_parent"
+                android:background="@color/background_dark_blue">
+                <TextView
+                    android:text="ОЦЕНКИ"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textMarksTitle"
+                    android:textColor="@color/bgr_white"
+                    android:textSize="@dimen/h3_text_size"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="1.0"
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+                <RelativeLayout
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:layout_width="0dip"
+                    android:background="@color/background_dark_blue">
+                    <ImageView
+                        android:id="@+id/imageRateDynamics"
+                        android:layout_height="72dp"
+                        android:layout_width="72dp"
+                        android:src="@mipmap/oval"
+                        android:scaleType="fitCenter"
+                        android:layout_gravity="center"
+                        android:layout_centerInParent="true" />
+                    <TextView
+                        android:text="0"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textDayMark"
+                        android:textColor="@color/bgr_white"
+                        android:textSize="@dimen/hscore_text_size"
+                        android:layout_centerInParent="true" />
+                    <TextView
+                        android:text="0"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textDayDynamics"
+                        android:textColor="@color/statusbar_red"
+                        android:textSize="@dimen/h2_text_size"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/imageRateDynamics"
+                        android:layout_centerVertical="true" />
+                    <TextView
+                        android:text="Оценка за последние сутки"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textDriveMarkTitle"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@id/imageRateDynamics"
+                        android:textColor="@color/description_message_color"
+                        android:textSize="@dimen/h5_text_size"
+                        android:layout_marginBottom="0.0dp"
+                        android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:layout_width="0dip"
+                    android:background="@color/background_dark_blue">
+                    <ImageView
+                        android:id="@+id/imageCircleMark"
+                        android:layout_height="72dp"
+                        android:layout_width="72dp"
+                        android:src="@mipmap/oval_empty"
+                        android:scaleType="fitCenter"
+                        android:layout_gravity="center"
+                        android:layout_centerInParent="true" />
+                    <TextView
+                        android:text="0"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textPeriodMark"
+                        android:textColor="@color/bgr_white"
+                        android:layout_centerInParent="true"
+                        android:textSize="@dimen/hscore_text_size"
+                        android:tag="S" />
+                    <TextView
+                        android:text="Оценка за 90 дней"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textDriveMarkForPeriodTitle"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@id/imageCircleMark"
+                        android:textColor="@color/description_message_color"
+                        android:textSize="@dimen/h5_text_size"
+                        android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/layoutStartTrack"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:visibility="gone"
+                android:background="@color/actionbar_blue"
+                android:minWidth="25px"
+                android:minHeight="25px">
+                <TextView
+                    android:text="НАЧАТЬ ПОЕЗДКУ"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textStartTrackTitle"
+                    android:layout_centerInParent="true"
+                    android:textSize="@dimen/h2_text_size"
+                    android:textColor="@color/bgr_white" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:background="@color/background_light_blue"
+                android:visibility="gone">
+                <TextView
+                    android:text="Из чего складывается итоговый балл"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textResultScoreTitle"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="@dimen/h3_text_size"
+                    android:textColor="@color/text_light_blue"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_height="1dp"
+                    android:background="@color/grid_separator_color" />
+                <RelativeLayout
+                    android:id="@+id/layoutTrips"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <ImageView
+                        android:src="@mipmap/ic_car"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:scaleType="fitCenter"
+                        android:layout_gravity="center"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="12dp"
+                        android:layout_alignParentLeft="true" />
+                    <TextView
+                        android:text="Поездки"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textTrips"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="30dp"
+                        android:textSize="@dimen/h3_text_size"
+                        android:textColor="@color/bgr_white"
+                        android:layout_marginTop="10dp" />
+                    <ImageView
+                        android:id="@+id/imageTripStars"
+                        android:src="@mipmap/star_line_five"
+                        android:layout_width="104dp"
+                        android:layout_height="12dp"
+                        android:scaleType="fitStart"
+                        android:layout_gravity="center"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="13dp"
+                        android:layout_alignParentRight="true" />
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="39dp"
+                        android:background="@color/grid_separator_color" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/layoutTripsDescription"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="Данная оценка формируется на основании количества поездок и их средней продолжительности поездки"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textTripsDescription"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="@dimen/h4_text_size"
+                        android:textColor="@color/description_message_color"
+                        android:layout_marginTop="10dp" />
+                </RelativeLayout>
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/separatorTripsDescription"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grid_separator_color" />
+                <RelativeLayout
+                    android:id="@+id/layoutAccelerations"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <ImageView
+                        android:src="@mipmap/ic_speed"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:scaleType="fitCenter"
+                        android:layout_gravity="center"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="12dp"
+                        android:layout_alignParentLeft="true" />
+                    <TextView
+                        android:text="Ускорения"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textAccelerations"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="30dp"
+                        android:textSize="@dimen/h3_text_size"
+                        android:textColor="@color/bgr_white"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentTop="true" />
+                    <ImageView
+                        android:id="@+id/imageAccelerationStars"
+                        android:src="@mipmap/star_line_three"
+                        android:layout_width="104dp"
+                        android:layout_height="12dp"
+                        android:scaleType="fitStart"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="13dp"
+                        android:layout_alignParentRight="true" />
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="39dp"
+                        android:background="@color/grid_separator_color" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/layoutAccelerationsDescription"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="Данная оценка формируется на основании количества поездок и их средней продолжительности поездки"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textAccelerationsDescription"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="@dimen/h4_text_size"
+                        android:textColor="@color/description_message_color"
+                        android:layout_marginTop="10dp" />
+                </RelativeLayout>
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/separatorAccelerationsDescription"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grid_separator_color" />
+                <RelativeLayout
+                    android:id="@+id/layoutMileage"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <ImageView
+                        android:src="@mipmap/ic_wheel"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:scaleType="fitCenter"
+                        android:layout_gravity="center"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="12dp"
+                        android:layout_alignParentLeft="true" />
+                    <TextView
+                        android:text="Пробег"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textMileage"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="30dp"
+                        android:textSize="@dimen/h3_text_size"
+                        android:textColor="@color/bgr_white"
+                        android:layout_marginTop="10dp" />
+                    <ImageView
+                        android:id="@+id/imageMileageStars"
+                        android:src="@mipmap/star_line_one"
+                        android:layout_width="104dp"
+                        android:layout_height="12dp"
+                        android:scaleType="fitStart"
+                        android:layout_gravity="center"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="13dp"
+                        android:layout_alignParentRight="true" />
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="39dp"
+                        android:background="@color/grid_separator_color" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/layoutMileageDescription"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="Данная оценка формируется на основании количества поездок и их средней продолжительности поездки"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textMileageDescription"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="@dimen/h4_text_size"
+                        android:textColor="@color/description_message_color"
+                        android:layout_marginTop="10dp" />
+                </RelativeLayout>
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/separatorMileageDescription"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grid_separator_color" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:weightSum="1.0"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <RelativeLayout
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5"
+                        android:layout_width="0dip"
+                        android:background="@color/background_dark_blue"
+                        android:paddingRight="10dp"
+                        android:id="@+id/layoutTipsCount">
+                        <TextView
+                            android:text="Поездки"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textTripsCountTitle"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentLeft="true"
+                            android:textSize="@dimen/h3_text_size"
+                            android:textColor="@color/bgr_white" />
+                        <TextView
+                            android:text="0"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textTripsCount"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/submit_button_color"
+                            android:textSize="17sp" />
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="39dp"
+                            android:background="@color/grid_separator_color" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5"
+                        android:layout_width="0dip"
+                        android:background="@color/background_dark_blue"
+                        android:paddingLeft="10dp"
+                        android:id="@+id/layoutMileageCount">
+                        <TextView
+                            android:text="Пробег"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textMileageSumTitle"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentLeft="true"
+                            android:textSize="@dimen/h3_text_size"
+                            android:textColor="@color/bgr_white" />
+                        <TextView
+                            android:text="0 км"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textMileageSum"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/submit_button_color"
+                            android:textSize="17sp" />
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="39dp"
+                            android:background="@color/grid_separator_color" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/layoutMileageTipsDescription"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="Данная оценка формируется на основании количества поездок и их средней продолжительности поездки"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textMileageTipsDescription"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="@dimen/h4_text_size"
+                        android:textColor="@color/description_message_color"
+                        android:layout_marginTop="10dp" />
+                </RelativeLayout>
+                <LinearLayout
+                    android:id="@+id/layoutMileageTipsDescriptionSeparator"
+                    android:visibility="gone"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_height="1dp"
+                    android:background="@color/grid_separator_color" />
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+                <ImageView
+                    android:src="@mipmap/ic_bonus"
+                    android:layout_width="@dimen/icon_for_button"
+                    android:layout_height="@dimen/icon_for_button"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/textCurrentBonuses"
+                    android:layout_marginRight="5dp" />
+                <TextView
+                    android:text="Бонусные баллы"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textBonuses"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="@dimen/h3_text_size"
+                    android:textColor="@color/bgr_white"
+                    android:layout_centerVertical="true" />
+                <TextView
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/textCurrentBonuses"
+                    android:textColor="@color/bgr_white"
+                    android:textSize="32sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

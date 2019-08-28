@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark_blue"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:paddingRight="0dp"
+    android:paddingLeft="0dp">
+    <android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:paddingRight="@dimen/padding_right"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:id="@+id/toolbar" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:background="@color/background_dark_blue"
+                    android:minWidth="25px"
+                    android:minHeight="25px">
+                    <TextView
+                        android:text="DI"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textAboutTitle"
+                        android:textColor="@color/content_green"
+                        android:textSize="@dimen/h6_text_size"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:background="@color/background_light_blue">
+                    <TextView
+                        android:text="ОПИСАНИЕ"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textDescriptionTitle"
+                        android:layout_centerInParent="true"
+                        android:textSize="@dimen/h2_text_size"
+                        android:textColor="@color/text_light_blue" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+                    <TextView
+                        android:text="Описание проекта описание."
+                        android:inputType="textMultiLine"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/textDescription"
+                        android:textColor="@color/bgr_white"
+                        android:textSize="@dimen/h3_text_size" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/fragmentMenu"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_bottom" />
+</RelativeLayout>

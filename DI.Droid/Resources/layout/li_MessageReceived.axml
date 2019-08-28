@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="@dimen/padding_left">
+        <TextView
+            android:id="@+id/chatItemReceiverName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="2dp"
+            android:text="Name Surname"
+            android:textSize="@dimen/h4_text_size"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginLeft="20dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="19dp"
+                android:src="@drawable/chat_incoming_arrow"
+                android:layout_marginRight="-4dp" />
+            <TextView
+                android:id="@+id/chatItemMessage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/chat_incoming_message_body"
+                android:padding="8dp"
+                android:textColor="@color/bgr_white"
+                android:text="test message 5"
+                android:layout_marginRight="56dp" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/chatItemTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text="14:53"
+            android:textSize="@dimen/h4_text_size"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginTop="38dp"
+            android:layout_marginRight="16dp"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

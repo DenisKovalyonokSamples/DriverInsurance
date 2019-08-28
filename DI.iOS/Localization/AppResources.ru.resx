@@ -1,0 +1,1063 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>О проекте</value>
+  </data>
+  <data name="Accelerations" xml:space="preserve">
+    <value>Ускорения</value>
+  </data>
+  <data name="AccelerationsDescription" xml:space="preserve">
+    <value>Данная оценка формируется на основании количества резких фронтальных и боковых ускорений, а так же резких торможений</value>
+  </data>
+  <data name="Activate" xml:space="preserve">
+    <value>Активировать</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Адрес</value>
+  </data>
+  <data name="AdministrativeOffense" xml:space="preserve">
+    <value>- оригинал или заверенная копия постановления по делу об административном правонарушении (определения об отказе в возбуждении дела об административном правонарушении) – если составление данных документов является обязательным;</value>
+  </data>
+  <data name="Age" xml:space="preserve">
+    <value>Минимальный возраст</value>
+  </data>
+  <data name="AgeRequired" xml:space="preserve">
+    <value>Введите возраст</value>
+  </data>
+  <data name="AlarmBrand" xml:space="preserve">
+    <value>Марка сигнализации</value>
+  </data>
+  <data name="AlarmBrandRequired" xml:space="preserve">
+    <value>Введить марку сигнализации</value>
+  </data>
+  <data name="AlarmModel" xml:space="preserve">
+    <value>Модель сигнализации</value>
+  </data>
+  <data name="AlarmModelRequired" xml:space="preserve">
+    <value>Введите модель сигнализации</value>
+  </data>
+  <data name="AlarmPresence" xml:space="preserve">
+    <value>Наличие сигнализации</value>
+  </data>
+  <data name="AlarmPresenceRequired" xml:space="preserve">
+    <value>Введите наличие сигнализации</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>Все</value>
+  </data>
+  <data name="AppDescriptionOne" xml:space="preserve">
+    <value>Компания занимается управлением телематическими устройствами клиентов и формированием на их основе современных страховых продуктов.</value>
+  </data>
+  <data name="AppDescriptionThree" xml:space="preserve">
+    <value>Страховые компании имеют возможность получить понятный предсказуемый бизнес, а страхователи - адекватную стоимость страховых услуг. Это становится возможным благодаря регулярной оценке поступающих данных с любого телематического устройства, установленного на автомобиль. Телематические данные оцениваются разными страховыми компаниями и на их основе формируется индивидуальное предложение на страхование для клиента.</value>
+  </data>
+  <data name="AppDescriptionTwo" xml:space="preserve">
+    <value>Наша задача – согласовать со страховыми компаниями индивидуальные предложения для клиента, которые учитывали бы характер и особенности вождения, тем самым давая возможность сэкономить на страховании КАСКО.</value>
+  </data>
+  <data name="Apply" xml:space="preserve">
+    <value>Принять</value>
+  </data>
+  <data name="AppName" xml:space="preserve">
+    <value>Страховая компания</value>
+  </data>
+  <data name="Authorization" xml:space="preserve">
+    <value>Авторизация</value>
+  </data>
+  <data name="AverageSpeed" xml:space="preserve">
+    <value>Средняя скорость</value>
+  </data>
+  <data name="BonusAccrual" xml:space="preserve">
+    <value>Начисление бонуса</value>
+  </data>
+  <data name="Bonuses" xml:space="preserve">
+    <value>Бонусы</value>
+  </data>
+  <data name="BonusPoints" xml:space="preserve">
+    <value>Бонусные баллы</value>
+  </data>
+  <data name="Brand" xml:space="preserve">
+    <value>Производитель</value>
+  </data>
+  <data name="BrandTypeRequired" xml:space="preserve">
+    <value>Выберите производителя</value>
+  </data>
+  <data name="Buy" xml:space="preserve">
+    <value>Выкупить</value>
+  </data>
+  <data name="BuyFranchise" xml:space="preserve">
+    <value>Выкупить франшизу</value>
+  </data>
+  <data name="BuyIncurance" xml:space="preserve">
+    <value>Купить</value>
+  </data>
+  <data name="Calibrate" xml:space="preserve">
+    <value>Калибровка</value>
+  </data>
+  <data name="CalibrationDescription" xml:space="preserve">
+    <value>Уважаемый водитель, Ваше устройство требует повторной калибровки. Для этого Вам необходимо остановить ТС перед прямым участком дороги, нажать на кнопку "Начать калибровку" и начать движение, разогнав ТС до 30 км/ч.</value>
+  </data>
+  <data name="CallTheContactCenter" xml:space="preserve">
+    <value>6. Позвоните в контакт-центр партнера ... по телефону: 8 (888) 888-88-88 для получения консультации.</value>
+  </data>
+  <data name="Car" xml:space="preserve">
+    <value>Автомобиль</value>
+  </data>
+  <data name="CarBrand" xml:space="preserve">
+    <value>Марка ТС</value>
+  </data>
+  <data name="CarBrandRequired" xml:space="preserve">
+    <value>Введите марку авто</value>
+  </data>
+  <data name="CarInformation" xml:space="preserve">
+    <value>Данные об автомобиле</value>
+  </data>
+  <data name="CarModel" xml:space="preserve">
+    <value>Модель ТС</value>
+  </data>
+  <data name="CarModelRequired" xml:space="preserve">
+    <value>Введите модель авто</value>
+  </data>
+  <data name="Cars" xml:space="preserve">
+    <value>Автомобили</value>
+  </data>
+  <data name="CarYear" xml:space="preserve">
+    <value>Год выпуска ТС</value>
+  </data>
+  <data name="CarYearRequired" xml:space="preserve">
+    <value>Введите год выпуска ТС</value>
+  </data>
+  <data name="CertificateOnForm" xml:space="preserve">
+    <value>- справка по Форме № 154 с указанием перечня деталей, поврежденных в результате ДТП, выданная сотрудниками ГИБДД.</value>
+  </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>Изменить пароль</value>
+  </data>
+  <data name="Chat" xml:space="preserve">
+    <value>Чат</value>
+  </data>
+  <data name="Claim" xml:space="preserve">
+    <value>Заявка</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="Code" xml:space="preserve">
+    <value>Код</value>
+  </data>
+  <data name="CodeRequired" xml:space="preserve">
+    <value>Введите код</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>Подтвердить</value>
+  </data>
+  <data name="Confirmation" xml:space="preserve">
+    <value>Подтверждение</value>
+  </data>
+  <data name="ConfirmationMustMatch" xml:space="preserve">
+    <value>Пароль и подтверждение должны совпадать</value>
+  </data>
+  <data name="ConfirmationRequired" xml:space="preserve">
+    <value>Введите подтверждение</value>
+  </data>
+  <data name="ConfirmFranchiseMessage" xml:space="preserve">
+    <value>Вы действительно хотите выкупить франшизу?</value>
+  </data>
+  <data name="ConfirmPINCode" xml:space="preserve">
+    <value>Подтвердите PIN код</value>
+  </data>
+  <data name="ConfirmSupportPacketMessage" xml:space="preserve">
+    <value>Вы действительно хотите выкупить "Сервисный пакет" ?</value>
+  </data>
+  <data name="ConfirmSupportPacketPlusMessage" xml:space="preserve">
+    <value>Вы действительно хотите выкупить "Сервисный пакет +" ?</value>
+  </data>
+  <data name="ContactCenterPhone" xml:space="preserve">
+    <value>Контакт-центр партнера ...</value>
+  </data>
+  <data name="ContactEmergencyService" xml:space="preserve">
+    <value>3. Свяжитесь с экстренной службой: 112 - экстренные службы с мобильного телефона; 020 – для абонентов МТС, МегаФона; 002 - для абонентов БиЛайн и действуйте согласно указаниям сотрудника ГИБДД.</value>
+  </data>
+  <data name="Contacts" xml:space="preserve">
+    <value>Контакты</value>
+  </data>
+  <data name="ContractDescriptionMessage" xml:space="preserve">
+    <value>Заключение договора КАСКО позволит Вам накапливать бонусы, использовать возможности поиска ТС на карте и многое другое!</value>
+  </data>
+  <data name="ContractsDeadline" xml:space="preserve">
+    <value>Текущие предложения действуют до</value>
+  </data>
+  <data name="Cost" xml:space="preserve">
+    <value>Стоймость</value>
+  </data>
+  <data name="CostRequired" xml:space="preserve">
+    <value>Введите стоймость</value>
+  </data>
+  <data name="CreateNewPassword" xml:space="preserve">
+    <value>Создайте новый пароль</value>
+  </data>
+  <data name="CreatePINCode" xml:space="preserve">
+    <value>Создать PIN код</value>
+  </data>
+  <data name="CurrentBonusPoints" xml:space="preserve">
+    <value>Текущие бонусные баллы</value>
+  </data>
+  <data name="CurrentContractTitle" xml:space="preserve">
+    <value>Текущий договор КАСКО</value>
+  </data>
+  <data name="CurrentPolicy" xml:space="preserve">
+    <value>Текущий полис</value>
+  </data>
+  <data name="CurrentRating" xml:space="preserve">
+    <value>Текущий рейтинг</value>
+  </data>
+  <data name="CurrentState" xml:space="preserve">
+    <value>Текущее состояние</value>
+  </data>
+  <data name="DataSuccessfulyUpdated" xml:space="preserve">
+    <value>Данные успешно обновлены</value>
+  </data>
+  <data name="DataSynchronization" xml:space="preserve">
+    <value>Синхронизация данных</value>
+  </data>
+  <data name="DateOfBirth" xml:space="preserve">
+    <value>Дата рождения</value>
+  </data>
+  <data name="DateOfBirthRequired" xml:space="preserve">
+    <value>Введите дату рождения</value>
+  </data>
+  <data name="Days" xml:space="preserve">
+    <value>Дни</value>
+  </data>
+  <data name="DeclareANewEvent" xml:space="preserve">
+    <value>Заявить о новом событии</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="DeleteItemMessage" xml:space="preserve">
+    <value>Запись будет удалена. Продолжить?</value>
+  </data>
+  <data name="DeleteItemTitle" xml:space="preserve">
+    <value>Удалить запись</value>
+  </data>
+  <data name="DemoMode" xml:space="preserve">
+    <value>Демо режим</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Описание</value>
+  </data>
+  <data name="DeviceBrandRequired" xml:space="preserve">
+    <value>Выберите производителя</value>
+  </data>
+  <data name="DeviceId" xml:space="preserve">
+    <value>ID устройства</value>
+  </data>
+  <data name="DeviceIdRequired" xml:space="preserve">
+    <value>Введите ID устройства</value>
+  </data>
+  <data name="DeviceModelRequired" xml:space="preserve">
+    <value>Выберите модель устройства</value>
+  </data>
+  <data name="DeviceTypeRequired" xml:space="preserve">
+    <value>Выберите тип устройства</value>
+  </data>
+  <data name="Distance" xml:space="preserve">
+    <value>Дистанция</value>
+  </data>
+  <data name="DocumentProvingIdentity" xml:space="preserve">
+    <value>- документ, удостоверяющий личность заявителя.</value>
+  </data>
+  <data name="Done" xml:space="preserve">
+    <value>Готово</value>
+  </data>
+  <data name="DownloadInsuranceCompanySharingTitle" xml:space="preserve">
+    <value>Скачай мобильное приложение Каско и следи за своими результатами, как это делаю я!</value>
+  </data>
+  <data name="Driver" xml:space="preserve">
+    <value>Водитель</value>
+  </data>
+  <data name="DriverInformation" xml:space="preserve">
+    <value>Данные о водителе</value>
+  </data>
+  <data name="DriverLicense" xml:space="preserve">
+    <value>- водительское удостоверение лица, находившегося за рулем в момент ДТП, либо документ, его заменяющий;</value>
+  </data>
+  <data name="DrivingExperience" xml:space="preserve">
+    <value>Минимальный стаж</value>
+  </data>
+  <data name="DrivingExperienceRequired" xml:space="preserve">
+    <value>Введите стаж вождения</value>
+  </data>
+  <data name="Dynamics" xml:space="preserve">
+    <value>Динамика рейтинга</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="EmailRequired" xml:space="preserve">
+    <value>Введите email</value>
+  </data>
+  <data name="EnableGPS" xml:space="preserve">
+    <value>Пожалуйста включите GPS!</value>
+  </data>
+  <data name="Enter" xml:space="preserve">
+    <value>Войти</value>
+  </data>
+  <data name="EnterAddress" xml:space="preserve">
+    <value>Введите адрес</value>
+  </data>
+  <data name="EnterBonusCodeDescription" xml:space="preserve">
+    <value>Если у Вас есть бонусный код, введите его</value>
+  </data>
+  <data name="EnterCodeFromMessage" xml:space="preserve">
+    <value>Введите код из сообщения</value>
+  </data>
+  <data name="EnterConfirmationSMSCode" xml:space="preserve">
+    <value>Введите SMS код</value>
+  </data>
+  <data name="EnterMessage" xml:space="preserve">
+    <value>Введите сообщение</value>
+  </data>
+  <data name="EnterPassword" xml:space="preserve">
+    <value>Введите пароль</value>
+  </data>
+  <data name="EnterPINCode" xml:space="preserve">
+    <value>Введите PIN код</value>
+  </data>
+  <data name="EnterSMSCode" xml:space="preserve">
+    <value>Введите SMS код</value>
+  </data>
+  <data name="EnterYourPhoneNumber" xml:space="preserve">
+    <value>Введите номер Вашего телефона</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="ErrorMessage" xml:space="preserve">
+    <value>Извините, произошла ошибка. Попробуйте еще раз.</value>
+  </data>
+  <data name="EvaluationOfDriving" xml:space="preserve">
+    <value>Оценка вождения</value>
+  </data>
+  <data name="EventAddressRequired" xml:space="preserve">
+    <value>Введите адрес события</value>
+  </data>
+  <data name="EventDate" xml:space="preserve">
+    <value>Дата события</value>
+  </data>
+  <data name="EventDateRequired" xml:space="preserve">
+    <value>Выберите дату события</value>
+  </data>
+  <data name="Events" xml:space="preserve">
+    <value>События</value>
+  </data>
+  <data name="EventType" xml:space="preserve">
+    <value>Тип события</value>
+  </data>
+  <data name="EventTypeRequired" xml:space="preserve">
+    <value>Выберите тип события</value>
+  </data>
+  <data name="Extend" xml:space="preserve">
+    <value>Продлить</value>
+  </data>
+  <data name="FileUploading" xml:space="preserve">
+    <value>Загрузка файла...</value>
+  </data>
+  <data name="FindCarLocation" xml:space="preserve">
+    <value>Найти авто</value>
+  </data>
+  <data name="FixWithTheHelpPhotoAndVideo" xml:space="preserve">
+    <value>4. Зафиксируйте с помощью фото и видео по отношению к друг другу и объектам дорожной инфраструктуры, следы и предметы, относящиеся к происшествию, повреждения ТС, рег. номера и VIN номера ТС;</value>
+  </data>
+  <data name="ForAccountEntering" xml:space="preserve">
+    <value>Для входа в аккаунт</value>
+  </data>
+  <data name="ForCallsFromAnotherCountries" xml:space="preserve">
+    <value>Для бесплатных звонков по России</value>
+  </data>
+  <data name="ForCallsFromRussia" xml:space="preserve">
+    <value>Для бесплатных звонков по Москве</value>
+  </data>
+  <data name="ForMonth" xml:space="preserve">
+    <value>За 30 дней</value>
+  </data>
+  <data name="ForWeek" xml:space="preserve">
+    <value>За 7 дней</value>
+  </data>
+  <data name="Franchise" xml:space="preserve">
+    <value>Франшиза</value>
+  </data>
+  <data name="FranchiseDescription" xml:space="preserve">
+    <value>Франшиза выкупается на будущий период КАСКО. При покупке данной опции новый договор КАСКО будет без франшиз.</value>
+  </data>
+  <data name="FreeTheRoadway" xml:space="preserve">
+    <value>5. Освободите проезжую часть, если движению других ТС создается препятствие (автомобили нельзя перемещать без указания сотрудников ГИБДД);</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>С</value>
+  </data>
+  <data name="FutureBonusesDescription" xml:space="preserve">
+    <value>Совсем скоро в вашем мобильном приложении появится возможность накапливать бонусные баллы и тратить их на покупку услуг.</value>
+  </data>
+  <data name="FutureFunctionality" xml:space="preserve">
+    <value>Данная функциональность будет добавлена позже.</value>
+  </data>
+  <data name="GetBonusPoints" xml:space="preserve">
+    <value>Получить бонусные баллы</value>
+  </data>
+  <data name="GetPoints" xml:space="preserve">
+    <value>Получить баллы</value>
+  </data>
+  <data name="GetPolicy" xml:space="preserve">
+    <value>Получить предложения</value>
+  </data>
+  <data name="GooglePlayServicesNotInstalledMessage" xml:space="preserve">
+    <value>Пожалуйста установите Google Play Services для корректной работы приложения</value>
+  </data>
+  <data name="HowToReceiveInsuranceCompensation" xml:space="preserve">
+    <value>Как получить страховое возмещение</value>
+  </data>
+  <data name="IfYouComeByRecommendation" xml:space="preserve">
+    <value>Если Вы пришли по рекомендации</value>
+  </data>
+  <data name="ImmediatelyStopTheVehicle" xml:space="preserve">
+    <value>1. Немедленно остановите транспортное средство (далее - ТС) и включите аварийную световую сигнализацию;</value>
+  </data>
+  <data name="IncorrectDataEntered" xml:space="preserve">
+    <value>Введены некорректные данные</value>
+  </data>
+  <data name="IncorrectPINCode" xml:space="preserve">
+    <value>Неверный PIN код</value>
+  </data>
+  <data name="IncurancePeriod" xml:space="preserve">
+    <value>Период страхования</value>
+  </data>
+  <data name="InstallDate" xml:space="preserve">
+    <value>Дата установки</value>
+  </data>
+  <data name="InstallDateRequired" xml:space="preserve">
+    <value>Выберите дату установки</value>
+  </data>
+  <data name="Insurance" xml:space="preserve">
+    <value>Страховки</value>
+  </data>
+  <data name="InsuranceAward" xml:space="preserve">
+    <value>Страховая премия</value>
+  </data>
+  <data name="InsuranceBusinesses" xml:space="preserve">
+    <value>Страховые дела</value>
+  </data>
+  <data name="InsuranceBusinessNumber" xml:space="preserve">
+    <value>Номер страхового дела</value>
+  </data>
+  <data name="InsuranceCompanies" xml:space="preserve">
+    <value>Страховые компании</value>
+  </data>
+  <data name="InsuranceSum" xml:space="preserve">
+    <value>Страховая сумма</value>
+  </data>
+  <data name="km" xml:space="preserve">
+    <value>км</value>
+  </data>
+  <data name="kmh" xml:space="preserve">
+    <value>км/ч</value>
+  </data>
+  <data name="LoadingFileFailedMessage" xml:space="preserve">
+    <value>При загрузке выбранного Вами файла произошла ошибка. Пожалуйста попробуйте еще раз.</value>
+  </data>
+  <data name="M" xml:space="preserve">
+    <value>м</value>
+  </data>
+  <data name="Main" xml:space="preserve">
+    <value>Главная</value>
+  </data>
+  <data name="MarkForDay" xml:space="preserve">
+    <value>Оценка за последние сутки</value>
+  </data>
+  <data name="MarkForPeriod" xml:space="preserve">
+    <value>Оценка за 60 дней</value>
+  </data>
+  <data name="Marks" xml:space="preserve">
+    <value>Оценка Вашего вождения</value>
+  </data>
+  <data name="MarkTheEmergencyStopSign" xml:space="preserve">
+    <value>2. Выставьте знак аварийной остановки (не менее 15 м от ТС в населенном пункте и не менее 30 м вне населенного пункта);</value>
+  </data>
+  <data name="MaximumSpeed" xml:space="preserve">
+    <value>Максимальная скорость</value>
+  </data>
+  <data name="Mileage" xml:space="preserve">
+    <value>Пробег</value>
+  </data>
+  <data name="MileageCountDescription" xml:space="preserve">
+    <value>Общий показатель пробега за последние сутки</value>
+  </data>
+  <data name="MileageDescription" xml:space="preserve">
+    <value>Данная оценка формируется на основании общего пробега, поездок в часы пик, а так же управления автомобилем в ночное время</value>
+  </data>
+  <data name="MileageRequired" xml:space="preserve">
+    <value>Введите пробег</value>
+  </data>
+  <data name="MileageTitle" xml:space="preserve">
+    <value>Километраж</value>
+  </data>
+  <data name="Min" xml:space="preserve">
+    <value>Мин</value>
+  </data>
+  <data name="Model" xml:space="preserve">
+    <value>Модель</value>
+  </data>
+  <data name="ModelTypeRequired" xml:space="preserve">
+    <value>Выберите модель</value>
+  </data>
+  <data name="ModeOffTitle" xml:space="preserve">
+    <value>Выключен</value>
+  </data>
+  <data name="ModeOnTitle" xml:space="preserve">
+    <value>Включен</value>
+  </data>
+  <data name="MON" xml:space="preserve">
+    <value>МЕС.</value>
+  </data>
+  <data name="More" xml:space="preserve">
+    <value>Еще</value>
+  </data>
+  <data name="MyProfile" xml:space="preserve">
+    <value>Мой профиль</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="NameRequired" xml:space="preserve">
+    <value>Введите имя</value>
+  </data>
+  <data name="NativeNotification" xml:space="preserve">
+    <value>Мобильная</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Далее</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="NoConnectionToServer" xml:space="preserve">
+    <value>Сервер недоступен. Попробуйте позже.</value>
+  </data>
+  <data name="NoGridItems" xml:space="preserve">
+    <value>Нет ни одной записи</value>
+  </data>
+  <data name="NoPolicy" xml:space="preserve">
+    <value>Узнайте сколько будет стоить полис КАСКО для Вас</value>
+  </data>
+  <data name="NoServerConnectionMessage" xml:space="preserve">
+    <value>В данный момент доступ к серверу отсутствует. Пожалуйста проверьте Ваше подключение к сети или попробуйте позже.</value>
+  </data>
+  <data name="NotificationInsuredEvent" xml:space="preserve">
+    <value>- извещение (заявление) о страховом случае (заполняется в офисе партнера ...);</value>
+  </data>
+  <data name="Offer" xml:space="preserve">
+    <value>Предложение</value>
+  </data>
+  <data name="OneMoreAttemptLeft" xml:space="preserve">
+    <value>Осталась 1 попытка</value>
+  </data>
+  <data name="OperationArea" xml:space="preserve">
+    <value>Регион эксплуатации</value>
+  </data>
+  <data name="OperationAreaRequired" xml:space="preserve">
+    <value>Введите регион эксплуатации</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Пароль</value>
+  </data>
+  <data name="PasswordRecoveryTimeoutMessage" xml:space="preserve">
+    <value>Повторное восстановление пароля возможно через</value>
+  </data>
+  <data name="PasswordRequired" xml:space="preserve">
+    <value>Введите пароль</value>
+  </data>
+  <data name="Patronymic" xml:space="preserve">
+    <value>Отчество</value>
+  </data>
+  <data name="PatronymicRequired" xml:space="preserve">
+    <value>Введите отчество</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Телефон</value>
+  </data>
+  <data name="PhoneAlreadyExist" xml:space="preserve">
+    <value>Данный телефон уже зарегистрирован. Используйте другой номер.</value>
+  </data>
+  <data name="PhoneNumber" xml:space="preserve">
+    <value>Номер телефона</value>
+  </data>
+  <data name="PhoneRequired" xml:space="preserve">
+    <value>Введите телефон</value>
+  </data>
+  <data name="Phones" xml:space="preserve">
+    <value>Телефоны</value>
+  </data>
+  <data name="PointsAwardedFor" xml:space="preserve">
+    <value>Баллы начисляются за</value>
+  </data>
+  <data name="Policies" xml:space="preserve">
+    <value>Полисы</value>
+  </data>
+  <data name="PolicyCostForecast" xml:space="preserve">
+    <value>Прогноз стоймости полиса 
+на новый период</value>
+  </data>
+  <data name="PolicyDetails" xml:space="preserve">
+    <value>Правила страхования</value>
+  </data>
+  <data name="PolicyLimitDate" xml:space="preserve">
+    <value>Договор действует</value>
+  </data>
+  <data name="PolicyNumber" xml:space="preserve">
+    <value>Номер полиса</value>
+  </data>
+  <data name="PolicyPrice" xml:space="preserve">
+    <value>Цена полиса</value>
+  </data>
+  <data name="PolicyWasPurchased" xml:space="preserve">
+    <value>Ваш запрос на заключение договора принят. Мы свяжемся с Вами в течение 30 минут.</value>
+  </data>
+  <data name="PrepareAndSend" xml:space="preserve">
+    <value>2. Подготовьте и передайте в ЕВРОИНС комплект документов для возмещения ущерба:</value>
+  </data>
+  <data name="PresentDamagedVehicle" xml:space="preserve">
+    <value>1. Предъявите поврежденный автомобиль для осмотра</value>
+  </data>
+  <data name="PreviousContracts" xml:space="preserve">
+    <value>Предыдущие договоры КАСКО</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>Профиль</value>
+  </data>
+  <data name="ProjectedFranchise" xml:space="preserve">
+    <value>Прогнозируемая франшиза</value>
+  </data>
+  <data name="Purchased" xml:space="preserve">
+    <value>Куплено</value>
+  </data>
+  <data name="QuotationWasCreated" xml:space="preserve">
+    <value>Ваш запрос принят. Мы свяжемся с Вами в течение 30 минут.</value>
+  </data>
+  <data name="RateDescriptionMessage" xml:space="preserve">
+    <value>Включайте режим оценки стиля Вашего вождения и на основании полученных результатов мы сделаем Вам выгодные предложения!</value>
+  </data>
+  <data name="Rating" xml:space="preserve">
+    <value>Рейтинг</value>
+  </data>
+  <data name="ReadMore" xml:space="preserve">
+    <value>Подробнее</value>
+  </data>
+  <data name="Recommend" xml:space="preserve">
+    <value>Порекомендовать</value>
+  </data>
+  <data name="RecommendAppDescription" xml:space="preserve">
+    <value>Вы можете порекомендовать нас друзьям и близким, отправив им свой бонусный код. Если новый пользователь при регистрации введет его и приобретет первый договор КАСКО, Вам будут начислены бонусные баллы.</value>
+  </data>
+  <data name="RegisterPhoneDescription" xml:space="preserve">
+    <value>Номер телефона необходим для того, чтобы мы имели возможность показывать Ваши оценки именно Вам.</value>
+  </data>
+  <data name="RegistrationDocumentsTS" xml:space="preserve">
+    <value>- регистрационные документы на ТС - свидетельство о регистрации, либо заменяющий документ;</value>
+  </data>
+  <data name="RegistrationNumber" xml:space="preserve">
+    <value>Регистрационный номер</value>
+  </data>
+  <data name="RegistrationNumberAlreadyRegistered" xml:space="preserve">
+    <value>Такой номер уже зарегистрирован в системе</value>
+  </data>
+  <data name="RegistrationNumberRequired" xml:space="preserve">
+    <value>Введите регистрационный номер</value>
+  </data>
+  <data name="ResendSMS" xml:space="preserve">
+    <value>Отправить SMS повторно</value>
+  </data>
+  <data name="RestoreCodeSent" xml:space="preserve">
+    <value>Вам был отправлен SMS код для восстановления пароля</value>
+  </data>
+  <data name="RestorePassword" xml:space="preserve">
+    <value>Восстановить пароль</value>
+  </data>
+  <data name="ResultScoreDescription" xml:space="preserve">
+    <value>Из чего складывается итоговый балл</value>
+  </data>
+  <data name="RUB" xml:space="preserve">
+    <value>РУБ</value>
+  </data>
+  <data name="RUBTOMONTH" xml:space="preserve">
+    <value>РУБ/МЕС</value>
+  </data>
+  <data name="RUBTOYEAR" xml:space="preserve">
+    <value>РУБ/ГОД</value>
+  </data>
+  <data name="SafeModeNotifications" xml:space="preserve">
+    <value>Нотификации в охранном режиме</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="SecurityMode" xml:space="preserve">
+    <value>Охранный режим</value>
+  </data>
+  <data name="SecurityModeTitle" xml:space="preserve">
+    <value>Охранный режим. Оповещение в случае эвакуации или попытке угона.</value>
+  </data>
+  <data name="SelectBrandType" xml:space="preserve">
+    <value>Выбрать производителя</value>
+  </data>
+  <data name="SelectCarBrand" xml:space="preserve">
+    <value>Выбрать марку авто</value>
+  </data>
+  <data name="SelectCarModel" xml:space="preserve">
+    <value>Выбрать модель авто</value>
+  </data>
+  <data name="SelectDeviceBrand" xml:space="preserve">
+    <value>Выбрать производителя</value>
+  </data>
+  <data name="SelectDeviceModel" xml:space="preserve">
+    <value>Выбрать модель устройства</value>
+  </data>
+  <data name="SelectDeviceType" xml:space="preserve">
+    <value>Выбрать тип устройства</value>
+  </data>
+  <data name="SelectDocument" xml:space="preserve">
+    <value>Выбрать документ</value>
+  </data>
+  <data name="SelectEventDate" xml:space="preserve">
+    <value>Выбрать дату события</value>
+  </data>
+  <data name="SelectEventType" xml:space="preserve">
+    <value>Выбрать тип события</value>
+  </data>
+  <data name="SelectImage" xml:space="preserve">
+    <value>Выбрать изображение</value>
+  </data>
+  <data name="SelectInstallDate" xml:space="preserve">
+    <value>Выбрать дату установки</value>
+  </data>
+  <data name="SelectModelType" xml:space="preserve">
+    <value>Выбрать модель</value>
+  </data>
+  <data name="SelectStateType" xml:space="preserve">
+    <value>Выбрать текущее состояние</value>
+  </data>
+  <data name="SelectYearOfIssue" xml:space="preserve">
+    <value>Выбрать год выпуска</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>Отправить</value>
+  </data>
+  <data name="SendEventDescription" xml:space="preserve">
+    <value>Отправьте, пожалуйста, данные о событии. Наш специалист свяжется с Вами для подтверждения и регистрации страхового дела. </value>
+  </data>
+  <data name="SendRequest" xml:space="preserve">
+    <value>Отправить запрос</value>
+  </data>
+  <data name="SerialNumber" xml:space="preserve">
+    <value>Серийный номер</value>
+  </data>
+  <data name="SerialNumberRequired" xml:space="preserve">
+    <value>Введите серийный номер</value>
+  </data>
+  <data name="ServiceConditions" xml:space="preserve">
+    <value>Основные условия</value>
+  </data>
+  <data name="ServicePacket" xml:space="preserve">
+    <value>Сервисный пакет</value>
+  </data>
+  <data name="ShareAppBody" xml:space="preserve">
+    <value>Воспользуйтесь приложением {0}: {1} Введите код при регистрации и получите бонусы: {2}</value>
+  </data>
+  <data name="ShareResult" xml:space="preserve">
+    <value>Поделиться результатом</value>
+  </data>
+  <data name="SharpAcceleration" xml:space="preserve">
+    <value>Резкие ускорения</value>
+  </data>
+  <data name="SharpBraking" xml:space="preserve">
+    <value>Резкие торможения</value>
+  </data>
+  <data name="SharpBrakingMore" xml:space="preserve">
+    <value>Резкое торможение более 0,4g</value>
+  </data>
+  <data name="SharpFrontalAccelerationMore" xml:space="preserve">
+    <value>Резкое фронтальное ускорение более 0,3g</value>
+  </data>
+  <data name="SharpLateralAccelerationMore" xml:space="preserve">
+    <value>Резкое боковое ускорение более 0,3g</value>
+  </data>
+  <data name="ShowOnMap" xml:space="preserve">
+    <value>Показать на карте</value>
+  </data>
+  <data name="Skip" xml:space="preserve">
+    <value>Пропустить</value>
+  </data>
+  <data name="SMSCode" xml:space="preserve">
+    <value>SMS код</value>
+  </data>
+  <data name="SMSCodeConfirmationDescription" xml:space="preserve">
+    <value>Подтверждая свой номер телефона, Вы даете согласие на обработку персональных данных.</value>
+  </data>
+  <data name="SMSCodeRequired" xml:space="preserve">
+    <value>Введите SMS код</value>
+  </data>
+  <data name="SMSCodeSent" xml:space="preserve">
+    <value>SMS код отправлен</value>
+  </data>
+  <data name="SMSNotification" xml:space="preserve">
+    <value>SMS</value>
+  </data>
+  <data name="SpendBonusPoints" xml:space="preserve">
+    <value>Потратить бонусные баллы</value>
+  </data>
+  <data name="SpendPoints" xml:space="preserve">
+    <value>Потратить баллы</value>
+  </data>
+  <data name="StartCalibration" xml:space="preserve">
+    <value>Начать калибровку</value>
+  </data>
+  <data name="StartScoring" xml:space="preserve">
+    <value>Начать оценку</value>
+  </data>
+  <data name="StartTrack" xml:space="preserve">
+    <value>Начать поездку</value>
+  </data>
+  <data name="StateTypeRequired" xml:space="preserve">
+    <value>Выберите текущее состояние</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Статус</value>
+  </data>
+  <data name="StopScoring" xml:space="preserve">
+    <value>Закончить оценку</value>
+  </data>
+  <data name="StopTrack" xml:space="preserve">
+    <value>Завершить поездку</value>
+  </data>
+  <data name="SuchPhoneRegistered" xml:space="preserve">
+    <value>Данный телефон уже зарегистрирован в системе</value>
+  </data>
+  <data name="Support" xml:space="preserve">
+    <value>Поддержка</value>
+  </data>
+  <data name="Surname" xml:space="preserve">
+    <value>Фамилия</value>
+  </data>
+  <data name="SurnameRequired" xml:space="preserve">
+    <value>Введите фамилию</value>
+  </data>
+  <data name="TechnicalSupport" xml:space="preserve">
+    <value>Техническая помощь</value>
+  </data>
+  <data name="TechnicalSupportDescription" xml:space="preserve">
+    <value>Опция покупается на будущий период КАСКО. Данная опция включает в себя: тех.помощь на дороге, зарядку аккумулятора, замену колеса, эвакуацию при ДТП, подвоз топлива</value>
+  </data>
+  <data name="TechnicalSupportPlusDescription" xml:space="preserve">
+    <value>Опция покупается на будущий период КАСКО. Данная опция включает в себя: "Сервисный пакет" + услуги аварийного комиссара и персонального менеджера, эвакуацию при поломках</value>
+  </data>
+  <data name="Telematics" xml:space="preserve">
+    <value>Телематика</value>
+  </data>
+  <data name="TheOriginalCertified" xml:space="preserve">
+    <value>- оригинал или заверенная копия протокола об административном правонарушении, составленного сотрудником ГИБДД;</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>Время</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>По</value>
+  </data>
+  <data name="Today" xml:space="preserve">
+    <value>Сегодня</value>
+  </data>
+  <data name="Tracks" xml:space="preserve">
+    <value>Треки</value>
+  </data>
+  <data name="Trip" xml:space="preserve">
+    <value>Поездка</value>
+  </data>
+  <data name="TripId" xml:space="preserve">
+    <value>ID поездки</value>
+  </data>
+  <data name="Trips" xml:space="preserve">
+    <value>Поездки</value>
+  </data>
+  <data name="TripsCountDescription" xml:space="preserve">
+    <value>Общее кол-во поездок за последние сутки</value>
+  </data>
+  <data name="TripsDescription" xml:space="preserve">
+    <value>Данная оценка формируется на основании количества поездок и их средней продолжительности</value>
+  </data>
+  <data name="TripTime" xml:space="preserve">
+    <value>Время поездки</value>
+  </data>
+  <data name="TryAgain" xml:space="preserve">
+    <value>Повторите попытку</value>
+  </data>
+  <data name="TwoMoreAttemptsLeft" xml:space="preserve">
+    <value>Осталось 2 попытки</value>
+  </data>
+  <data name="Usefull" xml:space="preserve">
+    <value>Полезное</value>
+  </data>
+  <data name="ViewAllOffers" xml:space="preserve">
+    <value>Посмотреть все предложения</value>
+  </data>
+  <data name="WeFoundContractsForYou" xml:space="preserve">
+    <value>Мы выбрали для Вас лучшие предложения от Страховых компаний! Мы верим, что Вы найдете тот договор, который давно искали!</value>
+  </data>
+  <data name="WhatIsYourName" xml:space="preserve">
+    <value>Как Вас зовут?</value>
+  </data>
+  <data name="WhatToDoInAccident" xml:space="preserve">
+    <value>Что делать при ДТП</value>
+  </data>
+  <data name="WithinCalendarDays" xml:space="preserve">
+    <value>В течение 10 календарных дней заявите о страховом случае в ...:</value>
+  </data>
+  <data name="WrongBonusCode" xml:space="preserve">
+    <value>Неверный бонус код</value>
+  </data>
+  <data name="WrongFileFormatMessage" xml:space="preserve">
+    <value>Вы выбрали неверный тип файла. Поддерживаемые типы файлов для загрузки: pdf, doc, docx, jpg, jpeg, png.</value>
+  </data>
+  <data name="WrongPassword" xml:space="preserve">
+    <value>Неверный пароль</value>
+  </data>
+  <data name="WrongSMSCode" xml:space="preserve">
+    <value>Неверный код</value>
+  </data>
+  <data name="YearOfIssueRequired" xml:space="preserve">
+    <value>Введите год выпуска</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Да</value>
+  </data>
+  <data name="Yesterday" xml:space="preserve">
+    <value>Вчера</value>
+  </data>
+  <data name="YourCurrentResult" xml:space="preserve">
+    <value>Ваш текущий результат</value>
+  </data>
+</root>

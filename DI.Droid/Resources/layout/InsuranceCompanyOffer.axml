@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgr_white"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:paddingRight="0dp"
+    android:paddingLeft="0dp">
+    <android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:paddingRight="@dimen/padding_right"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:id="@+id/toolbar" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:background="@color/background_dark_blue"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:id="@+id/scrollMainContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp">
+                <RelativeLayout
+                    android:id="@+id/layoutCompanyName"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/submit_button_color">
+                    <TextView
+                        android:text="Имя страховой компании"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textCurrentCompanyName"
+                        android:layout_centerInParent="true"
+                        android:textSize="@dimen/h2_text_size"
+                        android:textColor="@color/bgr_white" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@color/background_dark_blue"
+                    android:minWidth="25px"
+                    android:minHeight="25px">
+                    <TextView
+                        android:text="Страховая сумма"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textInsuranceSumTitle"
+                        android:textColor="@color/bgr_white"
+                        android:textSize="17dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_centerVertical="true" />
+                    <TextView
+                        android:text="0"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textInsuranceSum"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/text_orange"
+                        android:textSize="@dimen/h1_text_size"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp" />
+                </RelativeLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grid_separator_color" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@color/background_dark_blue"
+                    android:minWidth="25px"
+                    android:minHeight="25px">
+                    <TextView
+                        android:text="Франшиза"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textFranchiseTitle"
+                        android:textColor="@color/bgr_white"
+                        android:textSize="17dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_alignParentLeft="true" />
+                    <TextView
+                        android:text="0"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textFranchise"
+                        android:textColor="@color/text_orange"
+                        android:textSize="@dimen/h1_text_size"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp" />
+                </RelativeLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grid_separator_color" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@color/background_dark_blue"
+                    android:minWidth="25px"
+                    android:minHeight="25px">
+                    <TextView
+                        android:text="Страховая премия"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textInsuranceAwardTitle"
+                        android:textColor="@color/bgr_white"
+                        android:textSize="17dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_centerVertical="true" />
+                    <TextView
+                        android:text="0"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textInsuranceAward"
+                        android:textColor="@color/text_orange"
+                        android:textSize="@dimen/h1_text_size"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp" />
+                </RelativeLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grid_separator_color" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@color/background_dark_blue">
+                    <TextView
+                        android:text="Период страхования"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textPolicyPeriodTitle"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="17dp"
+                        android:textColor="@color/bgr_white" />
+                    <TextView
+                        android:text="0 мес."
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textPolicyPeriod"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:textColor="@color/bgr_white"
+                        android:textSize="@dimen/h1_text_size" />
+                </RelativeLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grid_separator_color" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/layoutShowAllContractsTitle">
+                    <TextView
+                        android:text="СЕРВИСНЫЕ УСЛОВИЯ"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textServiceСonditionsTitle"
+                        android:layout_centerInParent="true"
+                        android:textSize="@dimen/h3_text_size"
+                        android:textColor="@color/submit_button_color" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+                    <TextView
+                        android:text="Описание сервисных условий"
+                        android:inputType="textMultiLine"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textServiceСonditionsDescription"
+                        android:textColor="@color/description_message_color"
+                        android:textSize="@dimen/h3_text_size"
+                        android:gravity="center_horizontal" />
+                </RelativeLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="?android:attr/progressBarStyle"
+                        android:indeterminateDrawable="@drawable/circular_progress_bar"
+                        android:visibility="gone"
+                        android:layout_gravity="center" />
+                    <Button
+                        android:id="@+id/buttonSave"
+                        android:gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/button_round_green"
+                        android:typeface="sans"
+                        android:textColor="@color/bgr_white"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/button_height"
+                        android:textAllCaps="true"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+                <Button
+                    android:id="@+id/layoutBuyPolicy"
+                    android:gravity="center"
+                    android:background="@drawable/button_round_green"
+                    android:typeface="sans"
+                    android:visibility="gone"
+                    android:textColor="@color/bgr_white"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/button_height"
+                    android:textAllCaps="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/fragmentMenu"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_bottom" />
+</RelativeLayout>

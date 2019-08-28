@@ -1,0 +1,9 @@
+layout/chart_layout.axml;layout/chart_layout.xml
+layout/range_navigator_layout.axml;layout/range_navigator_layout.xml
+Values/Strings.xml;values/strings.xml
+Anim/Fadein.xml;anim/fadein.xml
+layout/chart_legend_item.xml;layout/chart_legend_item.xml
+layout/chart_legend.xml;layout/chart_legend.xml
+Anim/Fadeout.xml;anim/fadeout.xml
+Anim/Scale_in.xml;anim/scale_in.xml
+Anim/Scale_out.xml;anim/scale_out.xml

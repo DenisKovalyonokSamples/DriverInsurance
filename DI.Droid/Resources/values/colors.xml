@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<resources>
+  <color name="actionbar_blue">#353543</color>
+  <color name="statusbar_blue">#2F2F3C</color>
+  <color name="submit_button_color">#28D2B9</color>
+  <color name="control_default_color">#42434F</color>
+  <color name="description_icon_color">#96969D</color>
+  <color name="description_message_color">#B5B5B9</color>
+  <color name="message_background_color">#43434F</color>
+  <color name="panel_background_color">#4F4F5B</color>
+  <color name="grid_separator_color">#434250</color>
+  <color name="text_orange">#EAC481</color>
+  <color name="bgr_white">#FFFFFF</color>
+  <color name="bgr_black">#000000</color>
+  <color name="content_gray">#B3B3B3</color>
+  <color name="content_green">#2BF60E</color>
+  <color name="background_dark_blue">#2E2E3B</color>
+  <color name="background_light_blue">#2A4069</color>
+  <color name="content_separator_blue">#2A4069</color>
+  <color name="text_dark_blue">#265EE5</color>
+  <color name="text_light_blue">#769DFA</color>
+  <color name="statusbar_red">#D01F29</color>
+  <color name="text_gray">#5A5957</color>
+  <color name="bgr_chat_panel">#F6F7F8</color>
+  <color name="bgr_chat_panel_border">#F1F2F3</color>
+  <color name="bgr_chat_incoming_message">#DCE8F4</color>
+</resources>

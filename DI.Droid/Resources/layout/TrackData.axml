@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark_blue">
+  <ProgressBar
+      android:id="@+id/progressBarLoading"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:minHeight="24dip"
+      android:maxHeight="24dip"
+      android:visibility="gone"
+      android:indeterminateOnly="true"
+      android:layout_gravity="top"
+      style="?android:attr/progressBarStyleHorizontal" />
+    <LinearLayout
+        android:id="@+id/layoutTabs"
+        android:orientation="horizontal"
+        android:weightSum="1.0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/buttonCurrentRatingTab"
+            android:gravity="center"
+            android:textSize="@dimen/h3_text_size"
+            android:typeface="sans"
+            android:background="@color/actionbar_blue"
+            android:textColor="@color/bgr_white"
+            android:paddingTop="14dp"
+            android:paddingBottom="12dp"
+            android:layout_weight=".5"
+            android:layout_width="0dip"
+            android:layout_height="@dimen/tabs_height"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:text="ТЕКУЩИЙ РЕЙТИНГ" />
+        <Button
+            android:id="@+id/buttonDynamicsTab"
+            android:gravity="center"
+            android:textSize="@dimen/h3_text_size"
+            android:typeface="sans"
+            android:background="@color/actionbar_blue"
+            android:textColor="@color/bgr_white"
+            android:paddingTop="14dp"
+            android:paddingBottom="12dp"
+            android:layout_weight=".5"
+            android:layout_width="0dip"
+            android:layout_height="@dimen/tabs_height"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:text="ДИНАМИКА" />
+    </LinearLayout>
+    <LinearLayout
+          android:orientation="horizontal"
+          android:id="@+id/layoutTabSelectors"
+          android:weightSum="1.0"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="-3dp">
+      <LinearLayout
+          android:id="@+id/selectorRatingsTab"
+          android:orientation="horizontal"
+          android:layout_weight=".5"
+          android:layout_width="0dip"
+          android:layout_height="3dp"
+          android:background="@color/submit_button_color" />
+      <LinearLayout
+          android:id="@+id/selectorDynamicsTab"
+          android:orientation="horizontal"
+          android:visibility="gone"
+          android:layout_weight=".5"
+          android:layout_width="0dip"
+          android:layout_height="3dp"
+          android:background="@color/submit_button_color" />
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/fragmentInsideContainer"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" />
+</LinearLayout>

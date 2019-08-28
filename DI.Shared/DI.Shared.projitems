@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>ed3d33cd-0d86-4e13-a1f1-dfb7473b82a5</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>DI.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Constants.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataAccess\APIDataManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataAccess\SmoochManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataAccess\SQLDataManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\BonusTransaction.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\BonusTransactionContainer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\BonusTransactionsContainer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\Car.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\CarContainer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\CarsContainer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\Companies.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\Company.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\CompanyContainer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\Contract.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\ContractContainer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\ContractsContainer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\Device.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\DeviceContainer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\DevicesContainer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\DictionariesContainer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\Dictionary.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\DictionaryContainer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\DictionaryItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\DictionaryItemsContainer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\Driver.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\FileUploadResponse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\GeoAddress.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\HeliumApiResponseContent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\Incident.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\IncidentContainer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\IncidentsContainer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\Loss.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\LossContainer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\LossesContainer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\Quotation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\QuotationContainer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\QuotationsContainer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\ResponseResult.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\ResponseResultWithCode.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\ScoringRound.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\ScoringRoundParameter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\ScoringRoundParametersContainer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\ScoringRoundsContainer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\Status.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\TokenResponseModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\Tracking.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\TrackingContainer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\TrackingDay.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\TrackingDaysContainer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\TrackingsContainer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\TrackingTrip.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\TrackingTripContainer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\TrackingTripsContainer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\User.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\UserContainer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\UserForRegistration.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\Users.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\API\UsersContainer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\Smooch\App.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\Smooch\AppUser.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\Smooch\Authorization.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\Smooch\Client.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\Smooch\Conversation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\Smooch\Device.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\Smooch\Info.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\Smooch\IntegrationRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\Smooch\JWT.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\Smooch\Message.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\Smooch\MessageModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\Smooch\Unit.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\SQL\DemoModeData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\SQL\SmoochUserData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entities\SQL\User.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\FilterType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\MessageType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\PartialType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\ResultCode.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\EmptyStringToNullResolver.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\SmoochHepler.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\ISelectable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Managers\DataManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Managers\SecurityManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Managers\SessionManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Managers\VMManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\GridDataViewModels.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Enums\" />
+  </ItemGroup>
+</Project>

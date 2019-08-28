@@ -1,0 +1,2 @@
+android.support.multidex.MultiDexApplication
+com.driverinsurance.ryxol

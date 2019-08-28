@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:paddingRight="0dp"
+    android:paddingLeft="0dp"
+    android:background="@color/background_dark_blue">
+  <android.support.design.widget.CoordinatorLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+      android:layout_width="match_parent"
+      android:layout_height="fill_parent">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:paddingTop="20dp"
+        android:background="@color/background_dark_blue"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/addItemFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="@dimen/fab_margin"
+        app:backgroundTint="@color/actionbar_blue"
+        android:src="@mipmap/add_fab_icon" />
+  </android.support.design.widget.CoordinatorLayout>
+  <ProgressBar
+      android:id="@+id/progressBarLoading"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:minHeight="24dip"
+      android:maxHeight="24dip"
+      android:visibility="gone"
+      android:indeterminateOnly="true"
+      android:layout_gravity="top"
+      style="?android:attr/progressBarStyleHorizontal" />
+  <TextView
+      android:id="@+id/emptyListText"
+      android:typeface="sans"
+      android:gravity="center"
+      android:background="@color/bgr_white"
+      android:textColor="@color/text_gray"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:textSize="@dimen/h4_text_size"
+      android:visibility="gone"
+      android:layout_below="@id/progressBarLoading"
+      android:paddingTop="@dimen/list_emptytext_padding_to" />
+</RelativeLayout>

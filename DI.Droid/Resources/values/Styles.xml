@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <style name="MyTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="windowNoTitle">true</item>
+    <item name="windowActionBar">false</item>
+    <item name="colorControlNormal">@color/control_default_color</item>
+    <item name="colorPrimary">@color/content_gray</item>
+    <item name="colorPrimaryDark">@color/content_gray</item>
+    <item name="android:textColorHint">@color/description_message_color</item>
+    <item name="android:colorAccent">@color/actionbar_blue</item>
+    <item name="colorControlActivated">@color/bgr_white</item>
+    <item name="colorControlHighlight">@color/actionbar_blue</item>
+  </style>
+  <style name="StartupTheme" parent="MyTheme.Base">
+    <item name="android:windowBackground">@drawable/splash_screen</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowFullscreen">true</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="android:windowActionBar">true</item>
+  </style>
+  <style name="MasterLayoutTheme" parent="MyTheme.Base">
+  </style>
+  <style name="NavDrawerTextStyle" parent="Base.TextAppearance.AppCompat">
+    <item name="android:textSize">18sp</item>
+    <item name="android:textColor">@color/bgr_white</item>
+  </style>
+</resources>

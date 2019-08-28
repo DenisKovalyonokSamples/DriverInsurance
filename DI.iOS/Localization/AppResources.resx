@@ -1,0 +1,1063 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="Accelerations" xml:space="preserve">
+    <value>Accelerations</value>
+  </data>
+  <data name="AccelerationsDescription" xml:space="preserve">
+    <value>This estimate is formed on the basis of the number of sharp front and side accelerations, as well as sharp braking</value>
+  </data>
+  <data name="Activate" xml:space="preserve">
+    <value>Activate</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="AdministrativeOffense" xml:space="preserve">
+    <value>- the original or a certified copy of the decision on the case of an administrative offense (the decision to refuse to initiate a case of an administrative offense) - if the compilation of these documents is mandatory;</value>
+  </data>
+  <data name="Age" xml:space="preserve">
+    <value>Minimal age</value>
+  </data>
+  <data name="AgeRequired" xml:space="preserve">
+    <value>Age required</value>
+  </data>
+  <data name="AlarmBrand" xml:space="preserve">
+    <value>Alarm brand</value>
+  </data>
+  <data name="AlarmBrandRequired" xml:space="preserve">
+    <value>Alarm brand required</value>
+  </data>
+  <data name="AlarmModel" xml:space="preserve">
+    <value>Alarm model</value>
+  </data>
+  <data name="AlarmModelRequired" xml:space="preserve">
+    <value>Alarm model required</value>
+  </data>
+  <data name="AlarmPresence" xml:space="preserve">
+    <value>Alarm presence</value>
+  </data>
+  <data name="AlarmPresenceRequired" xml:space="preserve">
+    <value>Alarm presence required</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="AppDescriptionOne" xml:space="preserve">
+    <value>Insurance Company company is engaged in management of telematics devices of clients and formation on their basis of modern insurance products.</value>
+  </data>
+  <data name="AppDescriptionThree" xml:space="preserve">
+    <value>Insurance companies have the opportunity to obtain an understandable predictable business, and insurers - an adequate cost of insurance services. This is made possible by the regular evaluation of incoming data from any telematics device installed on the vehicle. Telematics data are evaluated by different insurance companies and on their basis an individual offer for insurance for the client is formed.</value>
+  </data>
+  <data name="AppDescriptionTwo" xml:space="preserve">
+    <value>Our task is to agree with the insurance companies individual offers for the client, which would take into account his character and driving characteristics - thereby enabling him to save on CASCO insurance.</value>
+  </data>
+  <data name="Apply" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="AppName" xml:space="preserve">
+    <value>Insurance Company</value>
+  </data>
+  <data name="Authorization" xml:space="preserve">
+    <value>Authorization</value>
+  </data>
+  <data name="AverageSpeed" xml:space="preserve">
+    <value>Average speed</value>
+  </data>
+  <data name="BonusAccrual" xml:space="preserve">
+    <value>Bonus accrual</value>
+  </data>
+  <data name="Bonuses" xml:space="preserve">
+    <value>Bonuses</value>
+  </data>
+  <data name="BonusPoints" xml:space="preserve">
+    <value>Bonus points</value>
+  </data>
+  <data name="Brand" xml:space="preserve">
+    <value>Brand</value>
+  </data>
+  <data name="BrandTypeRequired" xml:space="preserve">
+    <value>Brand required</value>
+  </data>
+  <data name="Buy" xml:space="preserve">
+    <value>Buy</value>
+  </data>
+  <data name="BuyFranchise" xml:space="preserve">
+    <value>Buy franchise</value>
+  </data>
+  <data name="BuyIncurance" xml:space="preserve">
+    <value>Buy</value>
+  </data>
+  <data name="Calibrate" xml:space="preserve">
+    <value>Calibrate</value>
+  </data>
+  <data name="CalibrationDescription" xml:space="preserve">
+    <value>Dear driver, Your device requires recalibration. To do this, you need to stop the vehicle in front of a straight road section, click on the "Start Calibration" button and start driving, accelerating the vehicle to 30 km / h.</value>
+  </data>
+  <data name="CallTheContactCenter" xml:space="preserve">
+    <value>6. Call the contact center of the partner of ... by phone: 8 (888) 888-88-88 for consultation.</value>
+  </data>
+  <data name="Car" xml:space="preserve">
+    <value>Car</value>
+  </data>
+  <data name="CarBrand" xml:space="preserve">
+    <value>Car brand</value>
+  </data>
+  <data name="CarBrandRequired" xml:space="preserve">
+    <value>Car brand required</value>
+  </data>
+  <data name="CarInformation" xml:space="preserve">
+    <value>Car information</value>
+  </data>
+  <data name="CarModel" xml:space="preserve">
+    <value>Car model</value>
+  </data>
+  <data name="CarModelRequired" xml:space="preserve">
+    <value>Car model required</value>
+  </data>
+  <data name="Cars" xml:space="preserve">
+    <value>Cars</value>
+  </data>
+  <data name="CarYear" xml:space="preserve">
+    <value>Year of issue</value>
+  </data>
+  <data name="CarYearRequired" xml:space="preserve">
+    <value>Year of issue required</value>
+  </data>
+  <data name="CertificateOnForm" xml:space="preserve">
+    <value>- Certificate on Form No. 154 indicating the list of parts damaged as a result of an accident, issued by the traffic police.</value>
+  </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>Change password</value>
+  </data>
+  <data name="Chat" xml:space="preserve">
+    <value>Chat</value>
+  </data>
+  <data name="Claim" xml:space="preserve">
+    <value>Claim</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="Code" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="CodeRequired" xml:space="preserve">
+    <value>Code required</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="Confirmation" xml:space="preserve">
+    <value>Confirmation</value>
+  </data>
+  <data name="ConfirmationMustMatch" xml:space="preserve">
+    <value>Password and confirmation must match</value>
+  </data>
+  <data name="ConfirmationRequired" xml:space="preserve">
+    <value>Confirmation required</value>
+  </data>
+  <data name="ConfirmFranchiseMessage" xml:space="preserve">
+    <value>Do you really want to buy out a franchise?</value>
+  </data>
+  <data name="ConfirmPINCode" xml:space="preserve">
+    <value>Confirm PIN code</value>
+  </data>
+  <data name="ConfirmSupportPacketMessage" xml:space="preserve">
+    <value>Do you really want to buy out the "Service Pack" ?</value>
+  </data>
+  <data name="ConfirmSupportPacketPlusMessage" xml:space="preserve">
+    <value>Do you really want to buy out the "Service Pack +" ?</value>
+  </data>
+  <data name="ContactCenterPhone" xml:space="preserve">
+    <value>Contact center of the partner of ...</value>
+  </data>
+  <data name="ContactEmergencyService" xml:space="preserve">
+    <value>3. Contact emergency service: 112 - emergency services from your mobile phone; 020 - for MTS subscribers, MegaFon; 002 - for Beeline subscribers and act according to the instructions of the traffic police officer.</value>
+  </data>
+  <data name="Contacts" xml:space="preserve">
+    <value>Contacts</value>
+  </data>
+  <data name="ContractDescriptionMessage" xml:space="preserve">
+    <value>Conclusion of the contract CASCO will allow you to accumulate bonuses, use the search capabilities of the vehicle on the map and much more!</value>
+  </data>
+  <data name="ContractsDeadline" xml:space="preserve">
+    <value>Current offers are valid until</value>
+  </data>
+  <data name="Cost" xml:space="preserve">
+    <value>Cost</value>
+  </data>
+  <data name="CostRequired" xml:space="preserve">
+    <value>Cost required</value>
+  </data>
+  <data name="CreateNewPassword" xml:space="preserve">
+    <value>Create new password</value>
+  </data>
+  <data name="CreatePINCode" xml:space="preserve">
+    <value>Create PIN code</value>
+  </data>
+  <data name="CurrentBonusPoints" xml:space="preserve">
+    <value>Current bonus points</value>
+  </data>
+  <data name="CurrentContractTitle" xml:space="preserve">
+    <value>Current contract CASCO</value>
+  </data>
+  <data name="CurrentPolicy" xml:space="preserve">
+    <value>Current policy</value>
+  </data>
+  <data name="CurrentRating" xml:space="preserve">
+    <value>Current rating</value>
+  </data>
+  <data name="CurrentState" xml:space="preserve">
+    <value>Current state</value>
+  </data>
+  <data name="DataSuccessfulyUpdated" xml:space="preserve">
+    <value>Data successfuly updated</value>
+  </data>
+  <data name="DataSynchronization" xml:space="preserve">
+    <value>Data synchronization</value>
+  </data>
+  <data name="DateOfBirth" xml:space="preserve">
+    <value>Date of birth</value>
+  </data>
+  <data name="DateOfBirthRequired" xml:space="preserve">
+    <value>Date of birth required</value>
+  </data>
+  <data name="Days" xml:space="preserve">
+    <value>Days</value>
+  </data>
+  <data name="DeclareANewEvent" xml:space="preserve">
+    <value>Declare a new event</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="DeleteItemMessage" xml:space="preserve">
+    <value>Item will be deleted. Continue?</value>
+  </data>
+  <data name="DeleteItemTitle" xml:space="preserve">
+    <value>Delete Item</value>
+  </data>
+  <data name="DemoMode" xml:space="preserve">
+    <value>Demo mode</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="DeviceBrandRequired" xml:space="preserve">
+    <value>Device brand required</value>
+  </data>
+  <data name="DeviceId" xml:space="preserve">
+    <value>Device ID</value>
+  </data>
+  <data name="DeviceIdRequired" xml:space="preserve">
+    <value>Device ID required</value>
+  </data>
+  <data name="DeviceModelRequired" xml:space="preserve">
+    <value>Device model required</value>
+  </data>
+  <data name="DeviceTypeRequired" xml:space="preserve">
+    <value>Device type required</value>
+  </data>
+  <data name="Distance" xml:space="preserve">
+    <value>Distance</value>
+  </data>
+  <data name="DocumentProvingIdentity" xml:space="preserve">
+    <value>- a document proving the identity of the applicant.</value>
+  </data>
+  <data name="Done" xml:space="preserve">
+    <value>Done</value>
+  </data>
+  <data name="DownloadInsuranceCompanySharingTitle" xml:space="preserve">
+    <value>Download the mobile application Casco and watch your results, as I do!</value>
+  </data>
+  <data name="Driver" xml:space="preserve">
+    <value>Driver</value>
+  </data>
+  <data name="DriverInformation" xml:space="preserve">
+    <value>Driver information</value>
+  </data>
+  <data name="DriverLicense" xml:space="preserve">
+    <value>- driver's license of the person who was behind the wheel at the time of the accident, or the document replacing it;</value>
+  </data>
+  <data name="DrivingExperience" xml:space="preserve">
+    <value>Minimal driving experience</value>
+  </data>
+  <data name="DrivingExperienceRequired" xml:space="preserve">
+    <value>Driving experience required</value>
+  </data>
+  <data name="Dynamics" xml:space="preserve">
+    <value>Dynamics</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="EmailRequired" xml:space="preserve">
+    <value>Email required</value>
+  </data>
+  <data name="EnableGPS" xml:space="preserve">
+    <value>Please enable GPS!</value>
+  </data>
+  <data name="Enter" xml:space="preserve">
+    <value>Enter</value>
+  </data>
+  <data name="EnterAddress" xml:space="preserve">
+    <value>Enter address</value>
+  </data>
+  <data name="EnterBonusCodeDescription" xml:space="preserve">
+    <value>If you have a bonus code, enter it</value>
+  </data>
+  <data name="EnterCodeFromMessage" xml:space="preserve">
+    <value>Enter code from message</value>
+  </data>
+  <data name="EnterConfirmationSMSCode" xml:space="preserve">
+    <value>Enter SMS code</value>
+  </data>
+  <data name="EnterMessage" xml:space="preserve">
+    <value>Enter message</value>
+  </data>
+  <data name="EnterPassword" xml:space="preserve">
+    <value>Enter password</value>
+  </data>
+  <data name="EnterPINCode" xml:space="preserve">
+    <value>Enter PIN code</value>
+  </data>
+  <data name="EnterSMSCode" xml:space="preserve">
+    <value>Enter SMS code</value>
+  </data>
+  <data name="EnterYourPhoneNumber" xml:space="preserve">
+    <value>Enter your phone number</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="ErrorMessage" xml:space="preserve">
+    <value>Sorry, an error occurred.</value>
+  </data>
+  <data name="EvaluationOfDriving" xml:space="preserve">
+    <value>Evaluation of driving</value>
+  </data>
+  <data name="EventAddressRequired" xml:space="preserve">
+    <value>Event address required</value>
+  </data>
+  <data name="EventDate" xml:space="preserve">
+    <value>Event date</value>
+  </data>
+  <data name="EventDateRequired" xml:space="preserve">
+    <value>Event date required</value>
+  </data>
+  <data name="Events" xml:space="preserve">
+    <value>Events</value>
+  </data>
+  <data name="EventType" xml:space="preserve">
+    <value>Event type</value>
+  </data>
+  <data name="EventTypeRequired" xml:space="preserve">
+    <value>Event type required</value>
+  </data>
+  <data name="Extend" xml:space="preserve">
+    <value>Extend</value>
+  </data>
+  <data name="FileUploading" xml:space="preserve">
+    <value>File uploading...</value>
+  </data>
+  <data name="FindCarLocation" xml:space="preserve">
+    <value>Find сar</value>
+  </data>
+  <data name="FixWithTheHelpPhotoAndVideo" xml:space="preserve">
+    <value>4. Fix with the help of a photo and video in relation to each other and objects of the road infrastructure, tracks and objects pertaining to the incident, damage to the vehicle, reg. Numbers and VIN numbers of the vehicle;</value>
+  </data>
+  <data name="ForAccountEntering" xml:space="preserve">
+    <value>To sign in to your account</value>
+  </data>
+  <data name="ForCallsFromAnotherCountries" xml:space="preserve">
+    <value>For сalls from another countries</value>
+  </data>
+  <data name="ForCallsFromRussia" xml:space="preserve">
+    <value>For calls from Russia</value>
+  </data>
+  <data name="ForMonth" xml:space="preserve">
+    <value>For 30 days</value>
+  </data>
+  <data name="ForWeek" xml:space="preserve">
+    <value>For 7 days</value>
+  </data>
+  <data name="Franchise" xml:space="preserve">
+    <value>Franchise</value>
+  </data>
+  <data name="FranchiseDescription" xml:space="preserve">
+    <value>The franchise is redeemed for the future CASCO period. When buying this option, the new CASCO contract will be without franchises.</value>
+  </data>
+  <data name="FreeTheRoadway" xml:space="preserve">
+    <value>5. Free the roadway if other vehicles are obstructed (cars can not be moved without the traffic police officers being indicated);</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="FutureBonusesDescription" xml:space="preserve">
+    <value>Very soon in your mobile application will have the opportunity to accumulate bonus points and spend them on the purchase of services.</value>
+  </data>
+  <data name="FutureFunctionality" xml:space="preserve">
+    <value>This functionality will be added later.</value>
+  </data>
+  <data name="GetBonusPoints" xml:space="preserve">
+    <value>Get bonus points</value>
+  </data>
+  <data name="GetPoints" xml:space="preserve">
+    <value>Get points</value>
+  </data>
+  <data name="GetPolicy" xml:space="preserve">
+    <value>Get offers</value>
+  </data>
+  <data name="GooglePlayServicesNotInstalledMessage" xml:space="preserve">
+    <value>Please install Google Play Services for correct application</value>
+  </data>
+  <data name="HowToReceiveInsuranceCompensation" xml:space="preserve">
+    <value>How to receive insurance compensation</value>
+  </data>
+  <data name="IfYouComeByRecommendation" xml:space="preserve">
+    <value>If you came by recommendation</value>
+  </data>
+  <data name="ImmediatelyStopTheVehicle" xml:space="preserve">
+    <value>1. Immediately stop the vehicle (hereinafter - TC) and turn on the hazard warning light;</value>
+  </data>
+  <data name="IncorrectDataEntered" xml:space="preserve">
+    <value>Incorrect data entered</value>
+  </data>
+  <data name="IncorrectPINCode" xml:space="preserve">
+    <value>Incorrect PIN code</value>
+  </data>
+  <data name="IncurancePeriod" xml:space="preserve">
+    <value>Incurance period</value>
+  </data>
+  <data name="InstallDate" xml:space="preserve">
+    <value>Install date</value>
+  </data>
+  <data name="InstallDateRequired" xml:space="preserve">
+    <value>Install date required</value>
+  </data>
+  <data name="Insurance" xml:space="preserve">
+    <value>Insurance</value>
+  </data>
+  <data name="InsuranceAward" xml:space="preserve">
+    <value>Insurance award</value>
+  </data>
+  <data name="InsuranceBusinesses" xml:space="preserve">
+    <value>Insurance businesses</value>
+  </data>
+  <data name="InsuranceBusinessNumber" xml:space="preserve">
+    <value>Insurance business number</value>
+  </data>
+  <data name="InsuranceCompanies" xml:space="preserve">
+    <value>Insurance сompanies</value>
+  </data>
+  <data name="InsuranceSum" xml:space="preserve">
+    <value>Insurance sum</value>
+  </data>
+  <data name="km" xml:space="preserve">
+    <value>km</value>
+  </data>
+  <data name="kmh" xml:space="preserve">
+    <value>km/h</value>
+  </data>
+  <data name="LoadingFileFailedMessage" xml:space="preserve">
+    <value>An error occurred while loading the file you selected. Please try again.</value>
+  </data>
+  <data name="M" xml:space="preserve">
+    <value>m</value>
+  </data>
+  <data name="Main" xml:space="preserve">
+    <value>Main</value>
+  </data>
+  <data name="MarkForDay" xml:space="preserve">
+    <value>Mark for last day</value>
+  </data>
+  <data name="MarkForPeriod" xml:space="preserve">
+    <value>Mark for 60 days</value>
+  </data>
+  <data name="Marks" xml:space="preserve">
+    <value>Evaluation of your driving</value>
+  </data>
+  <data name="MarkTheEmergencyStopSign" xml:space="preserve">
+    <value>2. Mark the emergency stop sign (at least 15 m from the vehicle in the village and at least 30 m outside the village);</value>
+  </data>
+  <data name="MaximumSpeed" xml:space="preserve">
+    <value>Maximum speed</value>
+  </data>
+  <data name="Mileage" xml:space="preserve">
+    <value>Mileage</value>
+  </data>
+  <data name="MileageCountDescription" xml:space="preserve">
+    <value>Total mileage over the last 24 hours</value>
+  </data>
+  <data name="MileageDescription" xml:space="preserve">
+    <value>This estimate is formed on the basis of the total mileage, rides during peak hours, and also driving at night</value>
+  </data>
+  <data name="MileageRequired" xml:space="preserve">
+    <value>Mileage required</value>
+  </data>
+  <data name="MileageTitle" xml:space="preserve">
+    <value>Mileage</value>
+  </data>
+  <data name="Min" xml:space="preserve">
+    <value>Min</value>
+  </data>
+  <data name="Model" xml:space="preserve">
+    <value>Model</value>
+  </data>
+  <data name="ModelTypeRequired" xml:space="preserve">
+    <value>Model required</value>
+  </data>
+  <data name="ModeOffTitle" xml:space="preserve">
+    <value>Turned off</value>
+  </data>
+  <data name="ModeOnTitle" xml:space="preserve">
+    <value>Turned on</value>
+  </data>
+  <data name="MON" xml:space="preserve">
+    <value>MONTH</value>
+  </data>
+  <data name="More" xml:space="preserve">
+    <value>More</value>
+  </data>
+  <data name="MyProfile" xml:space="preserve">
+    <value>My profile</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="NameRequired" xml:space="preserve">
+    <value>Name required</value>
+  </data>
+  <data name="NativeNotification" xml:space="preserve">
+    <value>Mobile</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="NoConnectionToServer" xml:space="preserve">
+    <value>No connection with server. Try later.</value>
+  </data>
+  <data name="NoGridItems" xml:space="preserve">
+    <value>There are no items</value>
+  </data>
+  <data name="NoPolicy" xml:space="preserve">
+    <value>Find out how much it will cost CASCO for you</value>
+  </data>
+  <data name="NoServerConnectionMessage" xml:space="preserve">
+    <value>Currently there is no access to the server. Please check your network connection or try again later.</value>
+  </data>
+  <data name="NotificationInsuredEvent" xml:space="preserve">
+    <value>- notification (application) of the insured event (to be filled in at the office of the ... partner);</value>
+  </data>
+  <data name="Offer" xml:space="preserve">
+    <value>Offer</value>
+  </data>
+  <data name="OneMoreAttemptLeft" xml:space="preserve">
+    <value>1 attempt left</value>
+  </data>
+  <data name="OperationArea" xml:space="preserve">
+    <value>Operation area</value>
+  </data>
+  <data name="OperationAreaRequired" xml:space="preserve">
+    <value>Operation area required</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="PasswordRecoveryTimeoutMessage" xml:space="preserve">
+    <value>Password recovery is possible through</value>
+  </data>
+  <data name="PasswordRequired" xml:space="preserve">
+    <value>Password required</value>
+  </data>
+  <data name="Patronymic" xml:space="preserve">
+    <value>Patronymic</value>
+  </data>
+  <data name="PatronymicRequired" xml:space="preserve">
+    <value>Patronymic required</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="PhoneAlreadyExist" xml:space="preserve">
+    <value>This phone already registered. Please use another.</value>
+  </data>
+  <data name="PhoneNumber" xml:space="preserve">
+    <value>Phone number</value>
+  </data>
+  <data name="PhoneRequired" xml:space="preserve">
+    <value>Phone required</value>
+  </data>
+  <data name="Phones" xml:space="preserve">
+    <value>Phones</value>
+  </data>
+  <data name="PointsAwardedFor" xml:space="preserve">
+    <value>Points are awarded for</value>
+  </data>
+  <data name="Policies" xml:space="preserve">
+    <value>Policies</value>
+  </data>
+  <data name="PolicyCostForecast" xml:space="preserve">
+    <value>The forecast of the cost of the
+ policy for a new period</value>
+  </data>
+  <data name="PolicyDetails" xml:space="preserve">
+    <value>Policy details</value>
+  </data>
+  <data name="PolicyLimitDate" xml:space="preserve">
+    <value>The policy is valid until</value>
+  </data>
+  <data name="PolicyNumber" xml:space="preserve">
+    <value>Policy number</value>
+  </data>
+  <data name="PolicyPrice" xml:space="preserve">
+    <value>Policy price</value>
+  </data>
+  <data name="PolicyWasPurchased" xml:space="preserve">
+    <value>Your request for a contract is accepted. We will contact you within 30 minutes.</value>
+  </data>
+  <data name="PrepareAndSend" xml:space="preserve">
+    <value>2. Prepare and send to ... a set of documents for damages:</value>
+  </data>
+  <data name="PresentDamagedVehicle" xml:space="preserve">
+    <value>1. Present a damaged vehicle for inspection</value>
+  </data>
+  <data name="PreviousContracts" xml:space="preserve">
+    <value>Previous contracts CASCO</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>Profile</value>
+  </data>
+  <data name="ProjectedFranchise" xml:space="preserve">
+    <value>Projected franchise</value>
+  </data>
+  <data name="Purchased" xml:space="preserve">
+    <value>Purchased</value>
+  </data>
+  <data name="QuotationWasCreated" xml:space="preserve">
+    <value>Your request for quotation is accepted. We will contact you within 30 minutes.</value>
+  </data>
+  <data name="RateDescriptionMessage" xml:space="preserve">
+    <value>Include a mode of estimation of style of your driving and on the basis of the received results we will make you favorable offers!</value>
+  </data>
+  <data name="Rating" xml:space="preserve">
+    <value>Rating</value>
+  </data>
+  <data name="ReadMore" xml:space="preserve">
+    <value>Read more</value>
+  </data>
+  <data name="Recommend" xml:space="preserve">
+    <value>Recommend</value>
+  </data>
+  <data name="RecommendAppDescription" xml:space="preserve">
+    <value>You can recommend us to friends and family by sending them your bonus code. If a new user enters it during the registration and acquires the first CASCO contract, you will be awarded bonus points.</value>
+  </data>
+  <data name="RegisterPhoneDescription" xml:space="preserve">
+    <value>The phone number is necessary for us to be able to show your estimates to you.</value>
+  </data>
+  <data name="RegistrationDocumentsTS" xml:space="preserve">
+    <value>- Registration documents for TS - registration certificate, or a replacement document;</value>
+  </data>
+  <data name="RegistrationNumber" xml:space="preserve">
+    <value>Registration number</value>
+  </data>
+  <data name="RegistrationNumberAlreadyRegistered" xml:space="preserve">
+    <value>This number is already registered in the system</value>
+  </data>
+  <data name="RegistrationNumberRequired" xml:space="preserve">
+    <value>Registration number required</value>
+  </data>
+  <data name="ResendSMS" xml:space="preserve">
+    <value>Resend SMS</value>
+  </data>
+  <data name="RestoreCodeSent" xml:space="preserve">
+    <value>You were sent an SMS code to recover your password</value>
+  </data>
+  <data name="RestorePassword" xml:space="preserve">
+    <value>Restore password</value>
+  </data>
+  <data name="ResultScoreDescription" xml:space="preserve">
+    <value>What is the result of the total score</value>
+  </data>
+  <data name="RUB" xml:space="preserve">
+    <value>RUB</value>
+  </data>
+  <data name="RUBTOMONTH" xml:space="preserve">
+    <value>RUB/MON</value>
+  </data>
+  <data name="RUBTOYEAR" xml:space="preserve">
+    <value>RUB/YEAR</value>
+  </data>
+  <data name="SafeModeNotifications" xml:space="preserve">
+    <value>Safe mode notifications</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="SecurityMode" xml:space="preserve">
+    <value>Security mode</value>
+  </data>
+  <data name="SecurityModeTitle" xml:space="preserve">
+    <value>Security mode. Notification in case of evacuation or attempted theft.</value>
+  </data>
+  <data name="SelectBrandType" xml:space="preserve">
+    <value>Select brand</value>
+  </data>
+  <data name="SelectCarBrand" xml:space="preserve">
+    <value>Select car brand</value>
+  </data>
+  <data name="SelectCarModel" xml:space="preserve">
+    <value>Select car model</value>
+  </data>
+  <data name="SelectDeviceBrand" xml:space="preserve">
+    <value>Select device brand</value>
+  </data>
+  <data name="SelectDeviceModel" xml:space="preserve">
+    <value>Select device model</value>
+  </data>
+  <data name="SelectDeviceType" xml:space="preserve">
+    <value>Select device type</value>
+  </data>
+  <data name="SelectDocument" xml:space="preserve">
+    <value>Select document</value>
+  </data>
+  <data name="SelectEventDate" xml:space="preserve">
+    <value>Select event date</value>
+  </data>
+  <data name="SelectEventType" xml:space="preserve">
+    <value>Select event type</value>
+  </data>
+  <data name="SelectImage" xml:space="preserve">
+    <value>Select image</value>
+  </data>
+  <data name="SelectInstallDate" xml:space="preserve">
+    <value>Select Install date</value>
+  </data>
+  <data name="SelectModelType" xml:space="preserve">
+    <value>Select model</value>
+  </data>
+  <data name="SelectStateType" xml:space="preserve">
+    <value>Select current state</value>
+  </data>
+  <data name="SelectYearOfIssue" xml:space="preserve">
+    <value>Select year of issue</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="SendEventDescription" xml:space="preserve">
+    <value>Please send details about the event. Our specialist will contact you to confirm and register the insurance business.</value>
+  </data>
+  <data name="SendRequest" xml:space="preserve">
+    <value>Send request</value>
+  </data>
+  <data name="SerialNumber" xml:space="preserve">
+    <value>Serial number</value>
+  </data>
+  <data name="SerialNumberRequired" xml:space="preserve">
+    <value>Serial number required</value>
+  </data>
+  <data name="ServiceConditions" xml:space="preserve">
+    <value>Service conditions</value>
+  </data>
+  <data name="ServicePacket" xml:space="preserve">
+    <value>Service packet</value>
+  </data>
+  <data name="ShareAppBody" xml:space="preserve">
+    <value>Use the application {0}: {1} Enter the code when registering and get bonuses: {2}</value>
+  </data>
+  <data name="ShareResult" xml:space="preserve">
+    <value>Share result</value>
+  </data>
+  <data name="SharpAcceleration" xml:space="preserve">
+    <value>Sharp acceleration</value>
+  </data>
+  <data name="SharpBraking" xml:space="preserve">
+    <value>Sharp braking</value>
+  </data>
+  <data name="SharpBrakingMore" xml:space="preserve">
+    <value>Sharp braking more 0,4g</value>
+  </data>
+  <data name="SharpFrontalAccelerationMore" xml:space="preserve">
+    <value>Sharp frontal acceleration more  0,3g</value>
+  </data>
+  <data name="SharpLateralAccelerationMore" xml:space="preserve">
+    <value>Sharp lateral acceleration more 0,3g</value>
+  </data>
+  <data name="ShowOnMap" xml:space="preserve">
+    <value>Show on map</value>
+  </data>
+  <data name="Skip" xml:space="preserve">
+    <value>Skip</value>
+  </data>
+  <data name="SMSCode" xml:space="preserve">
+    <value>SMS code</value>
+  </data>
+  <data name="SMSCodeConfirmationDescription" xml:space="preserve">
+    <value>Confirming your phone number, you consent to the processing of personal data.</value>
+  </data>
+  <data name="SMSCodeRequired" xml:space="preserve">
+    <value>SMS code required</value>
+  </data>
+  <data name="SMSCodeSent" xml:space="preserve">
+    <value>SMS code sent</value>
+  </data>
+  <data name="SMSNotification" xml:space="preserve">
+    <value>SMS</value>
+  </data>
+  <data name="SpendBonusPoints" xml:space="preserve">
+    <value>Spend bonus points</value>
+  </data>
+  <data name="SpendPoints" xml:space="preserve">
+    <value>Spend points</value>
+  </data>
+  <data name="StartCalibration" xml:space="preserve">
+    <value>Start calibration</value>
+  </data>
+  <data name="StartScoring" xml:space="preserve">
+    <value>Start scoring</value>
+  </data>
+  <data name="StartTrack" xml:space="preserve">
+    <value>Start track</value>
+  </data>
+  <data name="StateTypeRequired" xml:space="preserve">
+    <value>Current state required</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="StopScoring" xml:space="preserve">
+    <value>Stop scoring</value>
+  </data>
+  <data name="StopTrack" xml:space="preserve">
+    <value>Stop track</value>
+  </data>
+  <data name="SuchPhoneRegistered" xml:space="preserve">
+    <value>This phone is already registered in the system</value>
+  </data>
+  <data name="Support" xml:space="preserve">
+    <value>Support</value>
+  </data>
+  <data name="Surname" xml:space="preserve">
+    <value>Surname</value>
+  </data>
+  <data name="SurnameRequired" xml:space="preserve">
+    <value>Surname required</value>
+  </data>
+  <data name="TechnicalSupport" xml:space="preserve">
+    <value>Technical support</value>
+  </data>
+  <data name="TechnicalSupportDescription" xml:space="preserve">
+    <value>Option is purchased for the future period of CASCO. This option includes - Technical assistance on the road, battery charging, Wheel replacement, Evacuation in case of an accident, Fuel supply</value>
+  </data>
+  <data name="TechnicalSupportPlusDescription" xml:space="preserve">
+    <value>Option is purchased for the future period of CASCO. This option includes "Service package" + emergency commissioner and personal manager services, Evacuation in case of breakdowns</value>
+  </data>
+  <data name="Telematics" xml:space="preserve">
+    <value>Telematics</value>
+  </data>
+  <data name="TheOriginalCertified" xml:space="preserve">
+    <value>- the original or a certified copy of the protocol on an administrative offense, compiled by a traffic police officer;</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>Time</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="Today" xml:space="preserve">
+    <value>Today</value>
+  </data>
+  <data name="Tracks" xml:space="preserve">
+    <value>Tracks</value>
+  </data>
+  <data name="Trip" xml:space="preserve">
+    <value>Trip</value>
+  </data>
+  <data name="TripId" xml:space="preserve">
+    <value>Trip ID</value>
+  </data>
+  <data name="Trips" xml:space="preserve">
+    <value>Trips</value>
+  </data>
+  <data name="TripsCountDescription" xml:space="preserve">
+    <value>Total number of trips in the last 24 hours</value>
+  </data>
+  <data name="TripsDescription" xml:space="preserve">
+    <value>This estimate is based on the number of trips and their average travel duration</value>
+  </data>
+  <data name="TripTime" xml:space="preserve">
+    <value>Trip time</value>
+  </data>
+  <data name="TryAgain" xml:space="preserve">
+    <value>Try again</value>
+  </data>
+  <data name="TwoMoreAttemptsLeft" xml:space="preserve">
+    <value>2 more attempts left</value>
+  </data>
+  <data name="Usefull" xml:space="preserve">
+    <value>Usefull</value>
+  </data>
+  <data name="ViewAllOffers" xml:space="preserve">
+    <value>View all offers</value>
+  </data>
+  <data name="WeFoundContractsForYou" xml:space="preserve">
+    <value>We have chosen for you the best offers from Insurance companies! We believe that you will find the contract that we have been looking for!</value>
+  </data>
+  <data name="WhatIsYourName" xml:space="preserve">
+    <value>What is your name?</value>
+  </data>
+  <data name="WhatToDoInAccident" xml:space="preserve">
+    <value>What to do in case of an accident</value>
+  </data>
+  <data name="WithinCalendarDays" xml:space="preserve">
+    <value>Within 10 calendar days, declare an insurance event in ...:</value>
+  </data>
+  <data name="WrongBonusCode" xml:space="preserve">
+    <value>Wrong bonus code</value>
+  </data>
+  <data name="WrongFileFormatMessage" xml:space="preserve">
+    <value>You selected an incorrect file type. Supported file types for upload: pdf, doc, docx, jpg, jpeg, png.</value>
+  </data>
+  <data name="WrongPassword" xml:space="preserve">
+    <value>Wrong password</value>
+  </data>
+  <data name="WrongSMSCode" xml:space="preserve">
+    <value>Wrong confirm code</value>
+  </data>
+  <data name="YearOfIssueRequired" xml:space="preserve">
+    <value>Year of issue required</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="Yesterday" xml:space="preserve">
+    <value>Yesterday</value>
+  </data>
+  <data name="YourCurrentResult" xml:space="preserve">
+    <value>Your current result</value>
+  </data>
+</root>
