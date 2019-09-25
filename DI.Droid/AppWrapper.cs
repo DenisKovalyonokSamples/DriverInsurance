@@ -1,17 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
 using Android.App;
 using Android.Content;
-using Android.OS;
 using Android.Runtime;
-using Android.Views;
-using Android.Widget;
-using DI.Shared.DataAccess;
-using DI.Shared.Entities.Smooch;
-using DI.Shared.Entities.SQL;
 using DI.Droid.Services;
 using DI.Shared.Managers;
 
